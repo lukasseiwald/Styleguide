@@ -2,13 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Styleguide</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto+Slab" rel="stylesheet">
 </head>
 <body>
 <header>
+  <div class="burgerwrapper" onclick="dropDown()">
+    <div class="burger" id="burgerDrop"></div>
+  </div>
     Frontend Styleguide Assignment
+    <nav id="navDrop">
+      <ul>
+        <li>
+          <a href="#header">Start</a>
+        </li>
+        <li>
+          <a href="#leistungen">Leistungen</a>
+        </li>
+        <li>
+          <a href="blog">Blog</a>
+        </li>
+        <li>
+          <a href="ueber-mich.html">Über mich</a>
+        </li>
+        <li>
+          <a href="#">Kontakt</a>
+        </li>
+      </ul>
+    </nav>
 </header>
-<section class="part">
+<section id="wrapper">
+  <section class="part">
     <h1>Brand Guide</h1>
     <section class="subsection">
         <h1>Introductioin</h1>
@@ -46,6 +74,7 @@
         <h1>Another Component</h1>
     </section>
 </section>
+</section>
 
 <footer>
     <h1>Contributors</h1>
@@ -55,5 +84,6 @@
         <li>Lukas Seiwald</li>
     </ul>
 </footer>
+<script language="javascript" type="text/javascript" src="nav.js"></script>
 </body>
 </html>

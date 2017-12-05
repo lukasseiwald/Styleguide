@@ -1,0 +1,86 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Slab', serif;
+}
+header{
+  z-index: 50023979283;
+  background-color: #bed09f;
+  color: #789e4f;
+  height: 3em;
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  line-height: 3em;
+  font-size: 1.4em;
+}
+#navDrop{
+  z-index: 5000;
+  width: 15vw;
+  height: 100vh;
+  text-align: left;
+  background-color: green;
+}
+#navDrop ul{
+  list-style-type: none;
+  margin-left: 1.5em;
+}
+
+.burgerwrapper{
+  margin-top: 0.4em;
+  cursor: pointer;
+  position: absolute;
+  width: 2.8em;
+  height: 2.4em;
+  left: 0.7em;
+}
+.burger{
+  display:block;
+  margin-top: 1em;
+  right: 0;
+  background-color: #789e4f;
+  border-style: none;
+  width: 2em;
+  height: 0.25em;
+  transition: all 0.3s ease-out;
+}
+.burger::before{
+  margin-top: 1em;
+  position: absolute;
+  content: "";
+  width: 2em;
+  height: 0.25em;
+  top: 0;
+  left: 0;
+  background-color: inherit;
+  transform: translate( 0, -0.6em);
+  transition: all 0.5s ease;
+}
+.burger::after{
+  margin-top: 1em;
+  position: absolute;
+  content: "";
+  width: 2em;
+  height: 0.25em;
+  top: 0;
+  left: 0;
+  background-color: inherit;
+  transform: translate( 0, 0.6em);
+  transition: all 0.5s ease;
+}
+.burger.x{
+  background-color: transparent;
+  cursor: pointer;
+}
+.burger.x:before{
+  transform: rotate(45deg);
+    background-color: #333;
+    width: 2em;
+}
+.burger.x:after{
+  transform: rotate(315deg);
+    background-color: #333;
+}
+
+#wrapper{
+  background-color: lightblue;
+}
