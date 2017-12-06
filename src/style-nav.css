@@ -1,3 +1,16 @@
+header{
+  top: 0;
+  width: 100vw;
+  position: fixed;
+  z-index: 50023979283;
+  background-color: #bed09f;
+  color: #789e4f;
+  height: 3em;
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  line-height: 3em;
+  font-size: 1.4em;
+}
 #navDrop.drop{
   transform: translate(0,0);
   transition: all 0.3s ease-out;
