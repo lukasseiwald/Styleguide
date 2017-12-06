@@ -3,25 +3,44 @@
   padding: 0;
   font-family: 'Roboto Slab', serif;
 }
-header{
-  z-index: 50023979283;
-  background-color: #bed09f;
-  color: #789e4f;
-  height: 3em;
-  font-family: 'Lobster', cursive;
-  text-align: center;
-  line-height: 3em;
-  font-size: 1.4em;
-}
 #wrapper{
   width: 80vw;
-  margin: 0 auto;
+  margin: 5em auto;
+}
+.button{
+
+}
+a.buttona{
+  text-decoration: none;
+  color: #789e4f;
+}
+a .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #bed09f;
+  border: 0.2em solid #789e4f;
+  padding: 0.7em;
+  width: 10em;
+  border-radius: 1em;
+  text-transform: uppercase;
+}
+.logo{
+  margin-top: 1.5em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo img{
+  height: 15em;
+  width: auto;
 }
 h1{
   text-align: center;
   margin: 0.5em;
   color: #e38003;
-  font-size: 1.5em;
+  font-size: 1.7em;
 }
 h2{
   text-align: center;
