@@ -104,3 +104,26 @@ footer ul li{
   display: inline;
   margin: 0 1em;
 }
+
+#library .menubutton{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#library .menubutton button{
+  font-family: 'Lobster', bold;
+  color: #fdfdfd;
+  font-size: 2em;
+  background-color: #789e4f;
+  border-color: #557037;
+  border-width: 3px;
+  width: 5em;
+  height: 5em;
+  text-align: center;
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+#library .menubutton .b2{
+  background-color: #e38003;
+  border-color: #b26403;
+}
