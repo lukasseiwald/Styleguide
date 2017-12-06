@@ -135,10 +135,14 @@ footer ul li{
 
 #KonoNav{
   margin-left: 70%;
+  margin-top: 5em;
+  margin-bottom: 10em;
 }
 
 #MainButton{
+  position: relative;
   width: 10em;
+  z-index: 100;
   height: 10em;
 }
 #MainButton img{
@@ -147,6 +151,7 @@ footer ul li{
 }
 
 .SubButton{
+  position: absolute;
   width: 5.5em;
   height: 5.5em;
   background-color: #789e4f;
@@ -161,8 +166,39 @@ footer ul li{
 }
 
 #HomeButton{
-  margin-right: 20em;
+  z-index: -1;
+  left: 2.3em;
+ top: 2.4em;
 }
+
+#EventButton{
+    z-index: -1;
+  left: 2.3em;
+ top: 2.4em;
+}
+
+#UserButton{
+    z-index: -1;
+  left: 2.3em;
+ top: 2.4em;
+}
+
+#HomeButton.out{
+  left: -6em;
+  top: 1.2em;
+}
+
+#EventButton.out{
+  left: -4em;
+  top: 7.7em;
+}
+
+#UserButton.out{
+  left: 2.2em;
+  top: 10.3em;
+}
+
+
 
 #EventButton img{
   padding-left: 0.7em;
