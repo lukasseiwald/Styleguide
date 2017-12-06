@@ -17,7 +17,61 @@ header{
   width: 80vw;
   margin: 0 auto;
 }
-
+h1{
+  text-align: center;
+  margin: 0.5em;
+  color: #e38003;
+  font-size: 1.5em;
+}
+h2{
+  text-align: center;
+  color: #e38003;
+  font-size: 1.2em;
+  margin: 0.5em;
+}
+.color{
+  height: 9em;
+  width: 9em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.colorwrapper{
+  margin-top: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.c1{
+  background-color: #fee332;
+}
+.c2{
+  background-color: #c17a05;
+}
+.c3{
+  background-color: #e38003;
+}
+.c4{
+  background-color: #789e4f
+}
+.c5{
+  background-color: #bed09f;
+}
+.c6{
+  background-color: #d9b01d;
+}
+.c7{
+  background-color: #855505;
+}
+.c8{
+  background-color: #b26403;
+}
+.c9{
+  background-color: #557037;
+}
+.c10{
+  background-color: #789e4f;
+}
 footer{
   display: flex;
   flex-direction: column;
@@ -36,6 +90,10 @@ footer h1{
   width: 90vw;
   display: flex;
   justify-content: center;
+}
+footer h1{
+  margin: 0;
+  color: #789e4f;
 }
 footer ul{
   list-style-type: none;
