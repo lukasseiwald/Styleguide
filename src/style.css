@@ -10,6 +10,14 @@
 .button{
 
 }
+
+.lobster-title{
+  font-family: 'Lobster', cursive;
+}
+.roboto-display{
+  font-family: 'Roboto Slab', serif;
+}
+
 a.buttona{
   text-decoration: none;
   color: #789e4f;
