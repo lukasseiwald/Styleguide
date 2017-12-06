@@ -104,3 +104,48 @@ footer ul li{
   display: inline;
   margin: 0 1em;
 }
+
+#KonoNav{
+  margin-left: 70%;
+}
+
+#MainButton{
+  width: 10em;
+  height: 10em;
+}
+#MainButton img{
+  width: 10em;
+  height: 10em;
+}
+
+.SubButton{
+  width: 5.5em;
+  height: 5.5em;
+  background-color: #789e4f;
+  border-radius: 5em;
+  border: 0.3em #557037 solid;
+}
+#HomeButton img{
+  padding-left: 0.3em;
+  padding-top: 0.2em;
+  width: 5em;
+  height: 5em;
+}
+
+#HomeButton{
+  margin-right: 20em;
+}
+
+#EventButton img{
+  padding-left: 0.7em;
+  padding-top: 0.8em;
+  width: 4.2em;
+  height: 4.2em;
+}
+
+#UserButton img{
+  padding-left: 1em;
+  padding-top: 0.8em;
+  width: 3.5em;
+  height: 3.5em;
+}
