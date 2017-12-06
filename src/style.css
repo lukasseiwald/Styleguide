@@ -199,3 +199,7 @@ footer ul li{
   background-color: #e38003;
   border-color: #b26403;
 }
+#library .menubutton img{
+  height: 13em;
+  width: auto;
+}
