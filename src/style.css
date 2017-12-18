@@ -11,12 +11,56 @@
 
 }
 
-.lobster-title{
+#typography{
+  text-align: center;
+}
+
+#typoDescription{
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.Lobster{
+  margin-bottom: 3em;
+}
+
+#L{
+  font-size: 4em;
   font-family: 'Lobster', cursive;
 }
-.roboto-display{
-  font-family: 'Roboto Slab', serif;
+
+#L1{
+  font-size: 3em;
+  font-family: 'Lobster', cursive;
 }
+
+.Roboto{
+  font-family: 'Roboto Slab', serif;
+  margin-top: 1em;
+}
+
+#R1{
+  font-size: 2.5em;
+}
+#R2{
+  font-size: 2em;
+}
+#R3{
+  font-size: 1.4em;
+}
+#R4{
+  font-family: 'Roboto Slab Light';
+  font-size: 1em;
+}
+#R5{
+  font-size: 0.8em;
+  font-weight: normal;
+}
+#R6{
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
 
 a.buttona{
   text-decoration: none;
@@ -99,6 +143,11 @@ h2{
 .c10{
   background-color: #789e4f;
 }
+
+#L1{
+  font
+}
+
 footer{
   display: flex;
   flex-direction: column;
@@ -137,6 +186,7 @@ footer ul li{
   margin-left: 70%;
   margin-top: 5em;
   margin-bottom: 10em;
+  cursor: pointer;
 }
 
 #MainButton{
@@ -145,19 +195,61 @@ footer ul li{
   z-index: 100;
   height: 10em;
 }
-#MainButton img{
+
+#Logo{
   width: 10em;
   height: 10em;
+  transition: 0.2s all ease-in;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes tilting {
+	0%, 100%, 20%, 50%, 80% {
+		transform:  rotate(0deg);
+	}
+	40% {
+		transform:  rotate(10deg);
+	}
+	60% {
+		transform:  rotate(-10deg);
+	}
 }
 
 .SubButton{
   position: absolute;
   width: 5.5em;
   height: 5.5em;
+  z-index: -1;
+   left: 2.3em;
+  top: 2.4em;
   background-color: #789e4f;
   border-radius: 5em;
   border: 0.3em #557037 solid;
+  transition: 0.2s all ease-in;
 }
+
+#Logo.out{
+  transform: rotate(45deg);
+}
+
+#HomeButton.out{
+  left: -6.4em;
+  top: 1.2em;
+}
+
+#EventButton.out{
+  left: -4em;
+  top: 7.7em;
+}
+
+#UserButton.out{
+  left: 2.2em;
+  top: 10.3em;
+}
+
+
 #HomeButton img{
   padding-left: 0.3em;
   padding-top: 0.2em;
@@ -165,29 +257,9 @@ footer ul li{
   height: 5em;
 }
 
-#HomeButton{
-  z-index: -1;
-  left: 2.3em;
-  top: 2.4em;
-  transition: 0.2s all ease-in;
-}
-
-#EventButton{
-  z-index: -1;
-  left: 2.3em;
-  top: 2.4em;
-  transition: 0.2s all ease-in;
-}
-
-#UserButton{
-  z-index: -1;
-  left: 2.3em;
-  top: 2.4em;
-  transition: 0.2s all ease-in;
-}
 
 #HomeButton.out{
-  left: -6em;
+  left: -6.4em;
   top: 1.2em;
 }
 
@@ -216,6 +288,24 @@ footer ul li{
   width: 3.5em;
   height: 3.5em;
 }
+
+#HomeButton:hover{
+  background-color: #e38003;
+  border-color: #b26403;
+}
+#EventButton:hover{
+  background-color: #e38003;
+  border-color: #b26403;
+}
+
+#UserButton:hover{
+  background-color: #e38003;
+  border-color: #b26403;
+}
+
+
+
+
 #library .menubutton{
   display: flex;
   align-items: center;
