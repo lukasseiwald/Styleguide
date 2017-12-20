@@ -392,20 +392,20 @@ footer ul li{
 }
 
 /* radio button styling */
-#library #radio{
+#radio{
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
 /* dropdown styling */
-#library #drop{
+#drop{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#library #drop .selectstyle{
+#drop .selectstyle{
   border: 1px solid #ccc;
   width: 120px;
   border-radius: 3px;
@@ -417,20 +417,43 @@ footer ul li{
   border-radius: 2em;
 }
 
-#library #drop select{
+#drop select{
+  color: #557037;
   display: flex;
   align-items: center;
   padding: 1em;
   padding-top: 0.3em;
   padding-bottom: 0.3em;
-  padding: 5px 8px;
   width: 130%;
   border: none;
   box-shadow: none;
   background: transparent;
   background-image: none;
   -webkit-appearance: none;
+  -moz-appearance: none;
 }
+
+/* textfield styling */
+#textfield{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#textfield input{
+  color: #557037;
+  background-color: #bed09f;
+  border-width: 2px;
+  border-color: #557037;
+  border-style: solid;
+  border-radius: 2em;
+  padding: 1em;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
 
 /* CODE SNIPPETS */
 
