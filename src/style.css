@@ -377,7 +377,34 @@ footer ul li{
   width: auto;
 }
 
+#code-style-rules{
+  text-align: center;
+}
 
-#naming-conventions p a{
+#code-style-rules p{
+  margin-top: 0.5em;
+}
 
+#code-style-rules h2{
+  margin-top: 1.5em;
+}
+
+#naming-conventions{
+  text-align: center;
+}
+
+#naming-conventions ul li{
+  list-style: none;
+  margin-top: 1em;
+}
+
+.cs-container-inline{
+  border: 2px solid #789e4f;
+  background-color: #bed09f;
+  border-radius: 3px;
+  width: 10px;
+  padding-left: 5px;
+  padding-right: 2px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
