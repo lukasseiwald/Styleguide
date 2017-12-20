@@ -408,22 +408,44 @@ footer ul li{
   margin-left: 5px;
   margin-right: 5px;
 }
-
+/* radio button styling */
 #library #radio{
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
+/* dropdown styling */
 #library #drop{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+#library #drop .selectstyle{
+  border: 1px solid #ccc;
+  width: 120px;
+  border-radius: 3px;
+  overflow: hidden;
+  background: #fafafa url("droparrow.png") no-repeat 90% 50%;
+  background-color: #bed09f;
+  border-color: #557037;
+  border-width: 2px;
+  border-radius: 2em;
+}
+
 #library #drop select{
-  -moz-appearance: none;
-  -webkit-appearance: none;
+  display: flex;
+  align-items: center;
   padding: 1em;
   padding-top: 0.3em;
   padding-bottom: 0.3em;
+  padding: 5px 8px;
+  width: 130%;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  background-image: none;
+  -webkit-appearance: none;
 }
+
