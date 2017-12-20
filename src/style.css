@@ -142,6 +142,12 @@ h2{
   font-size: 1.4em;
   margin: 1em 0;
 }
+h3{
+  text-align: center;
+  color: #e38003;
+  font-size: 1.1em;
+  margin: 1em 0;
+}
 .color{
   height: 9em;
   width: 9em;
