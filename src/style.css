@@ -92,33 +92,6 @@ a .button {
   border-radius: 1em;
   text-transform: uppercase;
 }
-
-/* CODE SNIPPETS */
-
-.cs-container {
-  background-color: #bed09f;
-  border: 3px solid #789e4f;
-  border-radius: 1em;
-  font-family: Courier, monospace;
-  width: 100%;
-  padding: 1em;
-}
-
-.cs-einrückung{
-  width: 1em;
-  height: 1em;
-}
-.cs-htmltag{
-  color:#557037;
-}
-
-.cs-class{
-  color:#b26403;
-}
-.cs-classname{
-  color:#c17a05;
-}
-
 .logo{
   margin-top: 1.5em;
   width: 100%;
@@ -413,4 +386,39 @@ footer ul li{
   padding-right: 2px;
   margin-left: 5px;
   margin-right: 5px;
+}
+/* CODE SNIPPETS */
+
+.cs-container {
+  background-color: #bed09f;
+  border: 3px solid #789e4f;
+  border-radius: 1em;
+  font-family: Courier, monospace;
+  width: 100%;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+.cs-cssproperty{
+  color:#e38003;
+}
+.cs-spaces{
+  opacity: 0;
+  background-color: blue;
+  width: 1em;
+  height: 1em;
+}
+.cs-htmltag{
+  color:#557037;
+}
+.cs-class{
+  color:#b26403;
+}
+.cs-classname{
+  color:#c17a05;
+}
+.cs-type{
+  margin-bottom: 0.4em;
+  color: #789e4f;
+  border-bottom: 2px solid #789e4f;
+  width: 100%;
 }
