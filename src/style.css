@@ -350,3 +350,22 @@ footer ul li{
 #naming-conventions p a{
   
 }
+
+#library #radio{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#library #drop{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#library #drop select{
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  padding: 1em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+}
