@@ -70,12 +70,14 @@
   height: 10em;
   width: auto;
 }
-#logo .logo-donts-wrapper{
+.logo-donts-wrapper{
+  margin-bottom: 1em;
   display: flex;
   width: 100%;
   justify-content: center;
 }
-a.buttona{
+a.logo-button-download{
+  margin: 0.9em;
   text-decoration: none;
   color: #789e4f;
 }
@@ -90,6 +92,9 @@ a .button {
   border-radius: 1em;
   text-transform: uppercase;
 }
+
+/* CODE SNIPPETS */
+
 .cs-container {
   background-color: #bed09f;
   border: 3px solid #789e4f;
@@ -103,7 +108,16 @@ a .button {
   width: 1em;
   height: 1em;
 }
+.cs-htmltag{
+  color:#557037;
+}
 
+.cs-class{
+  color:#b26403;
+}
+.cs-classname{
+  color:#c17a05;
+}
 
 .logo{
   margin-top: 1.5em;
@@ -118,7 +132,7 @@ a .button {
 }
 h1{
   text-align: center;
-  margin: 0.5em;
+  margin-top: 0.5em;
   color: #e38003;
   font-size: 2em;
 }
