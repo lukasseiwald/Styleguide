@@ -4,7 +4,7 @@
   font-family: 'Roboto Slab', serif;
 }
 #wrapper{
-  width: 80vw;
+  width: 60vw;
   margin: 5em auto;
 }
 .button{
@@ -90,6 +90,21 @@ a .button {
   border-radius: 1em;
   text-transform: uppercase;
 }
+.cs-container {
+  background-color: #bed09f;
+  border: 3px solid #789e4f;
+  border-radius: 1em;
+  font-family: Courier, monospace;
+  width: 100%;
+  padding: 1em;
+}
+
+.cs-einrückung{
+  width: 1em;
+  height: 1em;
+}
+
+
 .logo{
   margin-top: 1.5em;
   width: 100%;
@@ -105,13 +120,13 @@ h1{
   text-align: center;
   margin: 0.5em;
   color: #e38003;
-  font-size: 1.7em;
+  font-size: 2em;
 }
 h2{
   text-align: center;
   color: #e38003;
-  font-size: 1.2em;
-  margin: 0.5em;
+  font-size: 1.4em;
+  margin: 1em 0;
 }
 .color{
   height: 9em;
@@ -124,7 +139,7 @@ h2{
   margin-top: 1em;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .c1{
   background-color: #fee332;
@@ -319,12 +334,14 @@ footer ul li{
 
 
 
-#library .menubutton{
+.menubutton{
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
 }
-#library .menubutton button{
+.menubutton button{
+  margin:0.2em;
   font-family: 'Lobster', bold;
   color: #fdfdfd;
   font-size: 2em;
@@ -337,11 +354,11 @@ footer ul li{
   border-radius: 50%;
   margin-bottom: 1em;
 }
-#library .menubutton .b2{
+.menubutton .b2{
   background-color: #e38003;
   border-color: #b26403;
 }
-#library .menubutton img{
+.menubutton img{
   height: 13em;
   width: auto;
 }
