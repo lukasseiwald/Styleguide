@@ -424,7 +424,7 @@
               <h4>HTML</h4>
               <section class="cs-component-container">
                   <code>
-                      &lt;<span class="cs-htmltag">div</span>> <span class="cs-class">class</span>=<span class="cs-classname">"component-lists"</span>> <br />
+                      &lt;<span class="cs-htmltag">div</span>> <br />
                       <span class="cs-spaces">ss</span> &lt;<span class="cs-htmltag">ul</span>> <br />
                       <span class="cs-spaces">ssss</span> &lt;<span class="cs-htmltag">li</span>>List Element&lt;/<span class="cs-htmltag">li</span>><br/>
                       <span class="cs-spaces">ssss</span> &lt;<span class="cs-htmltag">li</span>>List Element&lt;/<span class="cs-htmltag">li</span>><br/>
@@ -436,7 +436,7 @@
               <h4>CSS</h4>
               <section class="cs-component-container">
                   <code>
-                      <span class="cs-classname">.component-lists</span> { <br />
+                      <span class="cs-classname">li</span> { <br />
                       <span class="cs-spaces">ss</span> <span class="cs-cssproperty">color:</span> #557037; <br />
                       <span class="cs-spaces">ss</span> <span class="cs-cssproperty">list-style-type:</span> circle; <br />
                       }
@@ -449,8 +449,8 @@
               <h2>Form-Elements</h2>
           </div>
           <section class="component-radio">
-             <h3>Radio Buttons</h3>
-             <ul>
+              <h3>Radio Buttons</h3>
+              <ul>
                  <li>
                     <input type="radio" name="options" id="radio1">
                     <label for="radio1">Option 1</label>
@@ -463,9 +463,25 @@
                     <input type="radio" name="options" id="radio3">
                     <label for="radio3">Option 3</label>
                  </li>
-             </ul>
-             <h4>HTML</h4>
-             <h4>CSS</h4>
+              </ul>
+              <h4>HTML</h4>
+              <section class="cs-component-container">
+                  <code>
+                      &lt;<span class="cs-htmltag">input</span><span class="cs-class"> type</span>=<span class="cs-classname">"radio"</span><span class="cs-class"> name</span>=<span class="cs-classname">"options"</span><span class="cs-class"> id</span>=<span class="cs-classname">"option1"</span>> <br />
+                      &lt;<span class="cs-htmltag">label</span><span class="cs-class"> for</span>=<span class="cs-classname">"option1"</span>>Option&lt;/<span class="cs-htmltag">label</span>> <br />
+                  </code>
+              </section>
+              <h4>CSS</h4>
+              <section class="cs-component-container">
+                  <code>
+                      <span class="cs-classname">input[type=radio]</span> { <br/>
+                      <span class="cs-spaces">ss</span> <span class="cs-cssproperty">display:</span> none; <br />
+                      }<br/>
+                      <span class="cs-classname">input[type=radio]</span> { <br/>
+                      <span class="cs-spaces">ss</span> <span class="cs-cssproperty">display:</span> none; <br />
+                      }
+                  </code>
+              </section>
           </section>
           <section class="component-textfield">
               <h3>Textfields</h3>
