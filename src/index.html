@@ -30,13 +30,12 @@
       </ul>
     </nav>
 </header>
-<section id="wrapper">
+<section class="wrapper">
   <section class="cs-container">
-
     <div class="cs-type">HTML</div>
     <code>
       &lt;<span class="cs-htmltag">div</span>> <span class="cs-class">class</span>=<span class="cs-classname">"button"</span>> <br />
-        <span class="cs-spaces">ss</span> </div>Download Logo <br />
+        <span class="cs-spaces">ss</span> Download Logo <br />
       &lt;/<span class="cs-htmltag">div</span>> <br />
     </code>
   </section>
@@ -55,21 +54,26 @@
   <section id="brandguide">
     <h1>Brand Guide</h1>
     <section class="introduction">
+      <div class="introduction-header">
         <h2>Introduction</h2>
-        <p>
+      </div>
+        <p class="introduction-wrapper">
           Kono is Hawaiian and means "invite" - "you are invited" and thats exactly what the design is supposed to reflect.
           The color and form language should be appealing and simple. But nevertheless it should radiate summer feelings and merriment.
           Due to this reason the design focuses on a simple and clear form language and the colors are used as a highlight.
         </p>
     </section>
-    <section id="colors">
+    <section class="colors">
+      <div class="colors-header">
         <h2>Colors</h2>
+      </div>
+      <div class="colors-wrapper">
         <p>
           The top pallete is shows the main colors which are based on the colors of a pineapple.
           The bottom pallete is containing the border colors whicht are used in buttons and icons.
         </p>
-        <div class="colorwrapper">
-          <div class="color c1">
+        <div class="color-wrapper">
+          <div class="color c1" onclick="ClipBoard('c1')">
             #fee332
           </div>
           <div class="color c2">
@@ -85,7 +89,7 @@
             #bed09f
           </div>
         </div>
-        <div class="colorwrapper">
+        <div class="color-wrapper">
           <div class="color c6">
             #d9b01d
           </div>
@@ -107,9 +111,12 @@
             <button class="b1">Inventory</button>
             <button class="b2">Guestlist</button>
         </section>
+      </div>
     </section>
-    <section id="typography">
+    <section class="typography">
+      <div class="typography-header">
         <h2>Typography</h2>
+      </div>
         <p id="typoDescription">
           em-Angaben abhängig von Standardgröße 16px
         </p>
@@ -135,8 +142,10 @@
           </div>
         </div>
     </section>
-    <section id="logo">
-        <h1>Logo</h1>
+    <section class="logo-section">
+      <div class="logo-header">
+        <h2>Logo</h2>
+      </div>
         <div class="logo">
           <img src="img/LogoKonofertig.png" title="Kono Logo" alt="Kono Title" />
         </div>
@@ -156,73 +165,246 @@
     </section>
   </section>
 
-  <section id="methodology">
+  <section class="methodology">
       <h1>CSS Methodology</h1>
-      <section id="code-style-rules">
-          <div>
+      <section class="code-style-rules">
+          <div class="methodology-header">
             <h2>Code Style Rules</h2>
 
             <h5>Kono uses <a href="http://codeguide.co/#css">Codeguide.co</a> as a base for Style Rules</h5>
-
-
-            <h3>Line Length</h3>
-            <p>
-              maximum line length: 90 characters
-            </p>
-            <p>
-              Every Declaration on a new line
-            </p>
-            <p>
-              Closing braces <span class="cs-container-inline">  } </span> of declaration blocks on a new line.
-            </p>
-            <h3>Indentation</h3>
-            <p>
-              Use two spaces<br/>
-              No tabs or mix of tabs and spaces (except line break inside parentheses)
-            </p>
-            <h3>Spacing</h3>
-            <p>
-              Space around operators
-               <span class="cs-container-inline"> :   *   +   -   =   >   < </span>
-            </p>
-            <p>
-              One SPACE before <span class="cs-container-inline"> { </span> for declaration
-            </p>
-            <h3>Hexadecimal Notations</h3>
-            <p>
-              Only 3 character where possible
-            </p>
-            <p>
-              Lowercase hex values <span class="cs-container-inline"> #fff </span>
-            </p>
-            <h3>Valid CSS</h3>
-            <p>
-              Use of valid CSS code where possible
-            </p>
-            <h3>Comments</h3>
-            <p>
-              comments for non self-explainable code
-            </p>
-            <h3>Units</h3>
-            <p>
-              em as standard unit <span class="cs-container-inline"> padding: 2em; </span>
-            </p>
-            <p>
-              Avoid the specifying units for zero values <span class="cs-container-inline"> padding: 0; </span>
-            </p>
           </div>
+          <h3>Line Length</h3>
+          <p>
+            maximum line length: 90 characters
+          </p>
+          <p>
+            Every Declaration on a new line
+          </p>
+          <p>
+            Closing braces <span class="cs-container-inline">  } </span> of declaration blocks on a new line.
+          </p>
+          <h3>Indentation</h3>
+          <p>
+            Use two spaces<br/>
+            No tabs or mix of tabs and spaces (except line break inside parentheses)
+          </p>
+          <h3>Spacing</h3>
+          <p>
+            Space around operators
+             <span class="cs-container-inline"> :   *   +   -   =   >   < </span>
+          </p>
+          <p>
+            One SPACE before <span class="cs-container-inline"> { </span> for declaration
+          </p>
+          <h3>Hexadecimal Notations</h3>
+          <p>
+            Only 3 character where possible
+          </p>
+          <p>
+            Lowercase hex values <span class="cs-container-inline"> #fff </span>
+          </p>
+          <h3>Valid CSS</h3>
+          <p>
+            Use of valid CSS code where possible
+          </p>
+          <h3>Comments</h3>
+          <p>
+            comments for non self-explainable code
+          </p>
+          <h3>Units</h3>
+          <p>
+            em as standard unit <span class="cs-container-inline"> padding: 2em; </span>
+          </p>
+          <p>
+            Avoid the specifying units for zero values <span class="cs-container-inline"> padding: 0; </span>
+          </p>
       </section>
-      <section id="naming-conventions">
+      <section class="naming-conventions">
+        <div class="methodology-header">
           <h2>Naming Conventions</h2>
           <h5>
             Kono uses the <a href="http://getbem.com/naming/">BEM</a> naming conventions <br/>
             This following section is a direct citation from the link above.
           </h5>
-          <div>
+        </div>
+          <div class="naming-conventions-div">
             <h3>Block</h3>
             <p>
-              Encapsulates a standalone entity that is meaningful on its own. While blocks can be nested and interact with each other, semantically they remain equal; there is no precedence or hierarchy. Holistic entities without DOM representation (such as controllers or models) can be blocks as well.
+              Encapsulates a standalone entity that is meaningful on its own.
+              While blocks can be nested and interact with each other,
+              semantically they remain equal; there is no precedence or hierarchy.
+               Holistic entities without DOM representation (such as controllers or models)
+               can be blocks as well.
             </p>
+            <div class="naming-conventions-div-container">
+              <div>
+                <h4>Naming</h4>
+                <p>
+                  Block names may consist of Latin letters, digits, and dashes.
+                  To form a CSS class, add a short prefix for namespacing: .block
+                </p>
+              </div>
+              <div>
+                <h4>HTML</h4>
+                <p>
+                  Any DOM node can be a block if it accepts a class name.
+                </p>
+                <section class="cs-container">
+                  <code>
+                    &lt;<span class="cs-htmltag">div</span> <span class="cs-class">class</span>=<span class="cs-classname">"block"</span>&gt; <br>
+                      <span class="cs-spaces">ss</span>... <br />
+                    &lt;/<span class="cs-htmltag">div</span>> <br />
+                  </code>
+                </section>
+              </div>
+              <div>
+                <h4>CSS</h4>
+                <ul>
+                  <li>
+                    Use class name selector only
+                  </li>
+                  <li>
+                    No tag name or ids
+                  </li>
+                  <li>
+                    No dependency on other blocks/elements on a page
+                  </li>
+                </ul>
+                <section class="cs-container">
+                  <code>
+                    <span class="cs-classname">.block</span> { <br />
+                      <span class="cs-spaces">ss</span> <span class="cs-cssproperty">color:</span> #b26403; <br />
+                    }
+                  </code>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="naming-conventions-div">
+            <h3>Element</h3>
+            <p>
+              Parts of a block and have no standalone meaning. Any element is semantically tied to its block.
+            </p>
+            <div class="naming-conventions-div-container">
+              <div>
+                <h4>Naming</h4>
+                <p>
+                  Element names may consist of Latin letters, digits, dashes and underscores.
+                  CSS class is formed as block name plus two underscores plus element name:
+                  <span class="cs-container-inline">.block__elem</span>
+                </p>
+              </div>
+              <div>
+                <h4>HTML</h4>
+                <p>
+                  Any DOM node within a block can be an element. Within a given block, all elements are semantically equal.
+                </p>
+                <section class="cs-container">
+                  <code>
+                    &lt;<span class="cs-htmltag">div</span> <span class="cs-class">class</span>=<span class="cs-classname">"block"</span>&gt; <br>
+                      <span class="cs-spaces">ss</span>... <br />
+                    &lt;<span class="cs-htmltag">span</span> <span class="cs-class">class</span>=<span class="cs-classname">"block__elem"</span>&gt;
+                    &lt;/<span class="cs-htmltag">span</span>> <br />
+                    &lt;/<span class="cs-htmltag">div</span>> <br />
+                  </code>
+                </section>
+              </div>
+              <div>
+                <h4>CSS</h4>
+                <ul>
+                  <li>
+                    Use class name selector only
+
+                  </li>
+                  <li>
+                    No tag name or ids
+
+                  </li>
+                  <li>
+                    No dependency on other blocks/elements on a page
+                  </li>
+                </ul>
+                <section class="cs-container">
+                  <code>
+                    <span class="cs-classname">.block__elem</span> { <br />
+                      <span class="cs-spaces">ss</span> <span class="cs-cssproperty">color:</span> #b26403; <br />
+                    }
+                  </code>
+                </section>
+              </div>
+            </div>
+          </div>
+
+          <div class="naming-conventions-div">
+            <h3>Modifier</h3>
+            <p>
+              Flags on blocks or elements. Use them to change appearance, behavior or state.
+            </p>
+            <div class="naming-conventions-div-container">
+              <div>
+                <h4>Naming</h4>
+                <p>
+                  Modifier names may consist of Latin letters,
+                  digits, dashes and underscores.
+                  CSS class is formed as block’s or
+                  element’s name plus two dashes:
+                  <span class="cs-container-inline">.block--mod</span> or <span class="cs-container-inline">.block__elem--mod </span>and <span class="cs-container-inline">.block--color-black</span> with <span class="cs-container-inline">.block--color-red</span>.
+                    Spaces in complicated modifiers are replaced by dash.
+                </p>
+              </div>
+              <div>
+                <h4>HTML</h4>
+                <p>
+                  Modifier is an extra class name which you add to a block/element DOM node. <br />Add modifier classes only to blocks/elements they modify, and keep the original class:
+                </p>
+                <section class="cs-container">
+                  <code>
+                    &lt;<span class="cs-htmltag">div</span> <span class="cs-class">class</span>=<span class="cs-classname">"block block--mod"</span>&gt; <br>
+                      <span class="cs-spaces">ss</span>... <br />
+                    &lt;/<span class="cs-htmltag">div</span>> <br />
+                    &lt;<span class="cs-htmltag">div</span> <span class="cs-class">class</span>=<span class="cs-classname">"block block--size-big
+		block--shadow-yes"</span>&gt; <br>
+                      <span class="cs-spaces">ss</span>... <br />
+                    &lt;/<span class="cs-htmltag">div</span>> <br />
+                  </code>
+                </section>
+              </div>
+              <div>
+                <h4>CSS</h4>
+                <ul>
+                  <li>
+                    Use modifier class name as selector:
+                    <section class="cs-container">
+                      <code>
+                        <span class="cs-classname">.block--hidden</span> {
+                          <span class="cs-spaces">ss</span><span class="cs-cssproperty"></span>
+                        }
+                      </code>
+                    </section>
+                  </li>
+                  <li>
+                    To alter elements based on a block-level modifier:
+                    <section class="cs-container">
+                      <code>
+                        <span class="cs-classname">.block--mod block__elem</span> {
+                          <span class="cs-spaces">ss</span><span class="cs-cssproperty"></span>
+                        }
+                      </code>
+                    </section>
+                  </li>
+                  <li>
+                    Element modifier:
+                    <section class="cs-container">
+                      <code>
+                        <span class="cs-classname">.block__elem--mod</span> {
+                          <span class="cs-spaces">ss</span><span class="cs-cssproperty"></span>
+                        }
+                      </code>
+                    </section>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
       </section>
   </section>
@@ -230,10 +412,7 @@
   <section id="library">
       <h1>Component Library</h1>
       <section class="subsection">
-          <h2>Headings</h2>
-      </section>
-      <section class="subsection">
-          <div class="stylelist">
+          <div class="component-lists">
               <h2>Lists</h2>
               <ul>
                   <li>List Element 1</li>
@@ -243,12 +422,9 @@
           </div>
       </section>
       <section class="subsection">
-          <h1>Another Component</h1>
-      </section>
-      <section class="subsection">
-          <h1>Form-Elements</h1>
+          <h2>Form-Elements</h2>
           <div id="radio">
-              <h2>Radio Buttons</h2>
+              <h3>Radio Buttons</h3>
                   <div>
                       <input type="radio" name="options" id="radio1">
                       <label>Option1<span></span></label>
@@ -260,11 +436,11 @@
               </ul>
           </div>
           <div id="textfield">
-              <h2>Textfields</h2>
+              <h3>Textfields</h3>
               <input type="text">
           </div>
           <div id="drop">
-              <h2>Dropdown</h2>
+              <h3>Dropdown</h3>
               <div class ="selectstyle">
                   <select>
                       <option>Option 1</option>
@@ -276,29 +452,27 @@
       </section>
 
       <section class="subsection">
-          <h1>Nav Menu</h1>
-          <div id="KonoNav">
-            <div id="MainButton" onclick="KonoNavOn()">
-              <img id="Logo" src="img/LogoKonoRand.png" onmouseover="hover(this);" onmouseout="unhover(this);"/>
-              <div class="SubButton" id="HomeButton">
+          <h2>Nav Menu</h2>
+          <div class="KonoNav">
+            <div class="MainButton" onclick="KonoNavOn()">
+              <img class="Logo" src="img/LogoKonoRand.png" onmouseover="hover(this);" onmouseout="unhover(this);"/>
+              <div class="SubButton" class="HomeButton">
                 <img src="img/home.png"/>
               </div>
-              <div class="SubButton" id="EventButton">
+              <div class="SubButton" class="EventButton">
                 <img src="img/event.png"/>
               </div>
-              <div class="SubButton" id="UserButton">
+              <div class="SubButton" class="UserButton">
                 <img src="img/profile.png"/>
               </div>
             </div>
           </div>
       </section>
-      <h1>Buttons</h1>
+      <h2>Buttons</h2>
       <section class="menubutton">
           <button class="b1">Inventory</button>
           <button class="b2">Guestlist</button>
       </section>
-      <img src="img/ButtonSnippet.png"/>
-
   </section>
 </section>
 
