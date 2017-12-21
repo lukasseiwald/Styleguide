@@ -199,7 +199,7 @@ footer ul li{
   border-top-left-radius: 9px;
 }
 
-#code-style-rules{
+.code-style-rules{
   text-align: center;
   border: 1px solid #789e4f;
   border-radius: 10px;
@@ -207,18 +207,18 @@ footer ul li{
   margin-top: 2em;
 }
 
-#code-style-rules p{
+.code-style-rules p{
   margin-top: 0.5em;
 }
 
-#code-style-rules h2{
+.code-style-rules h2{
   margin-top: 0;
   padding-top: 1em;
 }
 
 /* Naming Convention */
 
-#naming-conventions{
+.naming-conventions{
   text-align: center;
   border: 1px solid #789e4f;
   border-radius: 10px;
@@ -227,11 +227,11 @@ footer ul li{
   margin-top: 2em;
 }
 
-#naming-conventions ul li{
+.naming-conventions ul li{
   list-style: none;
 }
 
-#naming-conventions h2{
+.naming-conventions h2{
   margin-top: 0;
   padding-top: 1em;
 }
@@ -323,14 +323,14 @@ footer ul li{
 
 /* KONO NavBar */
 
-#KonoNav{
+.KonoNav{
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 8em;
 }
 
-#MainButton{
+.MainButton{
   position: relative;
   width: 10em;
   z-index: 100;
@@ -338,7 +338,7 @@ footer ul li{
   cursor: pointer;
 }
 
-#Logo{
+.Logo{
   width: 10em;
   height: 10em;
   transition: 0.2s all ease-in;
@@ -372,70 +372,70 @@ footer ul li{
   transition: 0.2s all ease-in;
 }
 
-#Logo.out{
+.Logo.out{
   transform: rotate(45deg);
 }
 
-#HomeButton.out{
+.HomeButton.out{
   left: -6.4em;
   top: 1.2em;
 }
 
-#EventButton.out{
+.EventButton.out{
   left: -4em;
   top: 7.7em;
 }
 
-#UserButton.out{
+.UserButton.out{
   left: 2.2em;
   top: 10.3em;
 }
 
-#HomeButton img{
+.HomeButton img{
   padding: 0.4em 0.2em;
   width: 5em;
   height: 5em;
 }
 
-#HomeButton.out{
+.HomeButton.out{
   left: -6.4em;
   top: 1.2em;
 }
 
-#EventButton.out{
+.EventButton.out{
   left: -4em;
   top: 7.7em;
 }
 
-#UserButton.out{
+.UserButton.out{
   left: 2.2em;
   top: 10.3em;
 }
 
-#EventButton img{
+.EventButton img{
   padding-left: 0.7em;
   padding-top: 0.8em;
   width: 4.2em;
   height: 4.2em;
 }
 
-#UserButton img{
+.UserButton img{
   padding-left: 1em;
   padding-top: 0.8em;
   width: 4em;
   height: 3.8em;
 }
 
-#HomeButton:hover{
+.HomeButton:hover{
   background-color: #e38003;
   border-color: #b26403;
 }
-#EventButton:hover{
+.EventButton:hover{
   background-color: #e38003;
   border-color: #b26403;
 }
 
-#UserButton:hover{
+.UserButton:hover{
   background-color: #e38003;
   border-color: #b26403;
 }
