@@ -19,6 +19,9 @@ function unhover(element) {
 }
 
 
-/*
-
-  */
+function ClipBoard(x)
+{
+  let copyText = document.getElementsByClassName(x)[0].innerHTML;
+  copyText.select();
+  document.execCommand("copy");
+}
