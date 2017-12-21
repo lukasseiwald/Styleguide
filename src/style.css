@@ -8,9 +8,6 @@
   width: 60vw;
   margin: 5em auto;
 }
-.button{
-
-}
 
 #typography{
   text-align: center;
@@ -21,46 +18,6 @@
   margin-bottom: 2em;
 }
 
-.Lobster{
-  margin-bottom: 3em;
-}
-
-#L{
-  font-size: 4em;
-  font-family: 'Lobster', cursive;
-}
-
-#L1{
-  font-size: 3em;
-  font-family: 'Lobster', cursive;
-}
-
-.Roboto{
-  font-family: 'Roboto Slab', serif;
-  margin-top: 1em;
-}
-
-#R1{
-  font-size: 2.5em;
-}
-#R2{
-  font-size: 2em;
-}
-#R3{
-  font-size: 1.4em;
-}
-#R4{
-  font-family: 'Roboto Slab Light';
-  font-size: 1em;
-}
-#R5{
-  font-size: 0.8em;
-  font-weight: normal;
-}
-#R6{
-  font-size: 1.8em;
-  font-weight: bold;
-}
 #logo{
   display: flex;
   justify-content: center;
@@ -78,11 +35,11 @@
   justify-content: center;
 }
 a.logo-button-download{
+  color: #789e4f;
   margin: 0.9em;
   text-decoration: none;
-  color: #789e4f;
 }
-a .button {
+.button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,6 +49,12 @@ a .button {
   width: 10em;
   border-radius: 1em;
   text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+
+.button:hover{
+  border: 0.2em solid #bed09f;
+  transition: all 0.5s ease;
 }
 .logo{
   margin-top: 1.5em;
@@ -135,41 +98,6 @@ h3{
   display: flex;
   justify-content: space-between;
 }
-.c1{
-  background-color: #fee332;
-}
-.c2{
-  background-color: #c17a05;
-}
-.c3{
-  background-color: #e38003;
-}
-.c4{
-  background-color: #789e4f
-}
-.c5{
-  background-color: #bed09f;
-}
-.c6{
-  background-color: #d9b01d;
-}
-.c7{
-  background-color: #855505;
-}
-.c8{
-  background-color: #b26403;
-}
-.c9{
-  background-color: #557037;
-}
-.c10{
-  background-color: #789e4f;
-}
-
-#L1{
-  font
-}
-
 footer{
   display: flex;
   flex-direction: column;
@@ -348,6 +276,9 @@ footer ul li{
   border-radius: 50%;
   margin-bottom: 1em;
 }
+.menubutton button:hover{
+  border-width: 0px;
+}
 .menubutton .b2{
   background-color: #e38003;
   border-color: #b26403;
@@ -411,6 +342,71 @@ footer ul li{
   margin-right: 0.5em;
   font-size: 0.8em;
 }
+
+/* radio button styling */
+#radio{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* dropdown styling */
+#drop{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#drop .selectstyle{
+  border: 1px solid #ccc;
+  width: 120px;
+  border-radius: 3px;
+  overflow: hidden;
+  background: #fafafa url("droparrow.png") no-repeat 90% 50%;
+  background-color: #bed09f;
+  border-color: #557037;
+  border-width: 2px;
+  border-radius: 2em;
+}
+
+#drop select{
+  color: #557037;
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  width: 130%;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* textfield styling */
+#textfield{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#textfield input{
+  color: #557037;
+  background-color: #bed09f;
+  border-width: 2px;
+  border-color: #557037;
+  border-style: solid;
+  border-radius: 2em;
+  padding: 1em;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+
 /* CODE SNIPPETS */
 
 .cs-container {
@@ -447,4 +443,79 @@ footer ul li{
   color: #789e4f;
   border-bottom: 2px solid #789e4f;
   width: 100%;
+}
+
+/* FONTS */
+
+.Lobster{
+  margin-bottom: 3em;
+}
+
+.L{
+  font-size: 4em;
+  font-family: 'Lobster', cursive;
+}
+
+.L1{
+  font-size: 3em;
+  font-family: 'Lobster', cursive;
+}
+
+.Roboto{
+  font-family: 'Roboto Slab', serif;
+  margin-top: 1em;
+}
+
+.R1{
+  font-size: 2.5em;
+}
+.R2{
+  font-size: 2em;
+}
+.R3{
+  font-size: 1.4em;
+}
+.R4{
+  font-family: 'Roboto Slab Light';
+  font-size: 1em;
+}
+.R5{
+  font-size: 0.8em;
+  font-weight: normal;
+}
+.R6{
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+/* COLORS */
+.c1{
+  background-color: #fee332;
+}
+.c2{
+  background-color: #c17a05;
+}
+.c3{
+  background-color: #e38003;
+}
+.c4{
+  background-color: #789e4f
+}
+.c5{
+  background-color: #bed09f;
+}
+.c6{
+  background-color: #d9b01d;
+}
+.c7{
+  background-color: #855505;
+}
+.c8{
+  background-color: #b26403;
+}
+.c9{
+  background-color: #557037;
+}
+.c10{
+  background-color: #789e4f;
 }
