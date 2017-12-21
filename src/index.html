@@ -32,11 +32,10 @@
 </header>
 <section id="wrapper">
   <section class="cs-container">
-
     <div class="cs-type">HTML</div>
     <code>
       &lt;<span class="cs-htmltag">div</span>> <span class="cs-class">class</span>=<span class="cs-classname">"button"</span>> <br />
-        <span class="cs-spaces">ss</span> </div>Download Logo <br />
+        <span class="cs-spaces">ss</span> Download Logo <br />
       &lt;/<span class="cs-htmltag">div</span>> <br />
     </code>
   </section>
@@ -221,12 +220,179 @@
             Kono uses the <a href="http://getbem.com/naming/">BEM</a> naming conventions <br/>
             This following section is a direct citation from the link above.
           </h5>
-          <div>
+          <div class="naming-conventions-div">
             <h3>Block</h3>
             <p>
-              Encapsulates a standalone entity that is meaningful on its own. While blocks can be nested and interact with each other, semantically they remain equal; there is no precedence or hierarchy. Holistic entities without DOM representation (such as controllers or models) can be blocks as well.
+              Encapsulates a standalone entity that is meaningful on its own.
+              While blocks can be nested and interact with each other,
+              semantically they remain equal; there is no precedence or hierarchy.
+               Holistic entities without DOM representation (such as controllers or models)
+               can be blocks as well.
             </p>
+            <div class="naming-conventions-div-container">
+              <div>
+                <h4>Naming</h4>
+                <p>
+                  Block names may consist of Latin letters, digits, and dashes.
+                  To form a CSS class, add a short prefix for namespacing: .block
+                </p>
+              </div>
+              <div>
+                <h4>HTML</h4>
+                <p>
+                  Any DOM node can be a block if it accepts a class name.
+                </p>
+                <section class="cs-container">
+                  <code>
+                    &lt;<span class="cs-htmltag">div</span> <span class="cs-class">class</span>=<span class="cs-classname">"block"</span>&gt; <br>
+                      <span class="cs-spaces">ss</span>... <br />
+                    &lt;/<span class="cs-htmltag">div</span>> <br />
+                  </code>
+                </section>
+              </div>
+              <div>
+                <h4>CSS</h4>
+                <ul>
+                  <li>
+                    Use class name selector only
+                  </li>
+                  <li>
+                    No tag name or ids
+                  </li>
+                  <li>
+                    No dependency on other blocks/elements on a page
+                  </li>
+                </ul>
+                <section class="cs-container">
+                  <code>
+                    <span class="cs-classname">.block</span>{ <br />
+                      <span class="cs-spaces">ss</span> <span class="cs-cssproperty">color:</span> #b26403; <br />
+                    }
+                  </code>
+                </section>
+              </div>
+            </div>
           </div>
+          <div class="naming-conventions-div">
+            <h3>Element</h3>
+            <p>
+              Parts of a block and have no standalone meaning. Any element is semantically tied to its block.
+            </p>
+            <div class="naming-conventions-div-container">
+              <div>
+                <h4>Naming</h4>
+                <p>
+                  Element names may consist of Latin letters, digits, dashes and underscores.
+                  CSS class is formed as block name plus two underscores plus element name:
+                  <span class="cs-container-inline">.block__elem</span>
+                </p>
+              </div>
+              <div>
+                <h4>HTML</h4>
+                <p>
+                  Any DOM node within a block can be an element. Within a given block, all elements are semantically equal.
+                </p>
+                <section class="cs-container">
+                  <code>
+                    &lt;<span class="cs-htmltag">div</span> <span class="cs-class">class</span>=<span class="cs-classname">"block"</span>&gt; <br>
+                      <span class="cs-spaces">ss</span>... <br />
+                    &lt;<span class="cs-htmltag">span</span> <span class="cs-class">class</span>=<span class="cs-classname">"block__elem"</span>&gt;
+                    &lt;/<span class="cs-htmltag">span</span>> <br />
+                    &lt;/<span class="cs-htmltag">div</span>> <br />
+                  </code>
+                </section>
+              </div>
+              <div>
+                <h4>CSS</h4>
+                <ul>
+                  <li>
+                    Use class name selector only
+
+                  </li>
+                  <li>
+                    No tag name or ids
+
+                  </li>
+                  <li>
+                    No dependency on other blocks/elements on a page
+                  </li>
+                </ul>
+                <section class="cs-container">
+                  <code>
+                    <span class="cs-classname">.block__elem</span>{ <br />
+                      <span class="cs-spaces">ss</span> <span class="cs-cssproperty">color:</span> #b26403; <br />
+                    }
+                  </code>
+                </section>
+              </div>
+            </div>
+          </div>
+
+          <div class="naming-conventions-div">
+            <h3>Modifier</h3>
+            <p>
+              Flags on blocks or elements. Use them to change appearance, behavior or state.
+            </p>
+            <div class="naming-conventions-div-container">
+              <div>
+                <h4>Naming</h4>
+                <p>
+                  Modifier names may consist of Latin letters,
+                  digits, dashes and underscores.
+                  CSS class is formed as block’s or
+                  element’s name plus two dashes:
+                  <span class="cs-container-inline">.block--mod</span> or <span class="cs-container-inline">.block__elem--mod </span>and <span class="cs-container-inline">.block--color-black</span> with <span class="cs-container-inline">.block--color-red</span>.
+                    Spaces in complicated modifiers are replaced by dash.
+                </p>
+              </div>
+              <div>
+                <h4>HTML</h4>
+                <p>
+                  Modifier is an extra class name which you add to a block/element DOM node. <br />Add modifier classes only to blocks/elements they modify, and keep the original class:
+                </p>
+                <section class="cs-container">
+                  <code>
+                    &lt;<span class="cs-htmltag">div</span> <span class="cs-class">class</span>=<span class="cs-classname">"block block--mod"</span>&gt; <br>
+                      <span class="cs-spaces">ss</span>... <br />
+                    &lt;/<span class="cs-htmltag">div</span>> <br />
+                    &lt;<span class="cs-htmltag">div</span> <span class="cs-class">class</span>=<span class="cs-classname">"block block--size-big
+		block--shadow-yes"</span>&gt; <br>
+                      <span class="cs-spaces">ss</span>... <br />
+                    &lt;/<span class="cs-htmltag">div</span>> <br />
+                  </code>
+                </section>
+              </div>
+              <div>
+                <h4>CSS</h4>
+                <ul>
+                  <li>
+                    Use modifier class name as selector:
+                    <section class="cs-container">
+                      <code>
+                        <span class="cs-classname">.block--hidden</span>{
+                          <span class="cs-spaces">ss</span><span class="cs-cssproperty"></span>
+                        }
+                      </code>
+                    </section>
+                  </li>
+                  <li>
+                    No tag name or ids
+                  </li>
+                  <li>
+                    No dependency on other blocks/elements on a page
+                  </li>
+                </ul>
+                <section class="cs-container">
+                  <code>
+                    <span class="cs-classname">.block</span>{ <br />
+                      <span class="cs-spaces">ss</span> <span class="cs-cssproperty">color:</span> #b26403; <br />
+                    }
+                  </code>
+                </section>
+              </div>
+            </div>
+          </div>
+
       </section>
   </section>
 

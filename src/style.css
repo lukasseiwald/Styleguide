@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: 'Roboto Slab', serif;
 }
 #wrapper{
@@ -374,6 +375,28 @@ footer ul li{
 
 #naming-conventions ul li{
   list-style: none;
+}
+
+.naming-conventions-div{
+  border: 1px solid #789e4f;
+  border-radius: 10px;
+  margin-top: 2em;
+  line-height: 1.6em;
+}
+
+.naming-conventions-div-container{
+  display: flex;
+  flex-flow: column;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+
+.naming-conventions-div-container div{
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.naming-conventions-div-container div p, ul, section{
   margin-top: 1em;
 }
 
@@ -381,11 +404,12 @@ footer ul li{
   border: 2px solid #789e4f;
   background-color: #bed09f;
   border-radius: 3px;
-  width: 10px;
-  padding-left: 5px;
-  padding-right: 2px;
-  margin-left: 5px;
-  margin-right: 5px;
+  width: 0.4em;
+  padding-left: 0.5em;
+  padding-right: 0.4em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  font-size: 0.8em;
 }
 /* CODE SNIPPETS */
 
@@ -397,6 +421,8 @@ footer ul li{
   width: 100%;
   padding: 1em;
   margin-bottom: 1em;
+  text-align: left;
+  display: block;
 }
 .cs-cssproperty{
   color:#e38003;
