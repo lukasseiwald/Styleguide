@@ -291,11 +291,54 @@ footer ul li {
 }
 
 /* radio button styling */
-#radio {
+.component-radio {
  display: flex;
  align-items: center;
  flex-direction: column;
 }
+
+.component-radio ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.component-radio ul li {
+  padding-bottom: 0.2em;
+  list-style: none;
+  color: #557037;
+}
+.component-radio ul li :hover {
+  color: #c17a05;
+}
+input[type="radio"] {
+  display: none;
+}
+input[type="radio"] + label:before {
+  background-color: #bed09f;
+  border-width: 2px;
+  border-color: #557037;
+  border-style: solid;
+  height: 1em;
+  width: 1em;
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  margin-top: -0.2em;
+  margin-right: 0.4em;
+  vertical-align: middle;
+}
+input[type="radio"]:checked + label:before {
+  background-color: #789e4f;
+}
+input[type="radio"]:checked:hover + label:before {
+  background-color: #d9b01d;
+}
+input[type="radio"]:hover + label:before {
+  background-color: #fee332;
+  border-color: #c17a05;
+}
+
+
 
 /* dropdown styling */
 #drop {
