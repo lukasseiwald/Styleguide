@@ -11,12 +11,12 @@
 
 @media screen and (max-width: 1200px) {
  .wrapper {
-  width: 80vw;
+ width: 80vw;
  }
 }
 @media screen and (max-width: 700px) {
  .wrapper {
-  width: 85vw;
+ width: 85vw;
  }
 }
 
@@ -141,11 +141,11 @@ h4 {
 }
 @media screen and (max-width: 500px) {
  .color-wrapper {
-  flex-direction: column;
-  align-items: center;
+ flex-direction: column;
+ align-items: center;
  }
  .color {
-  margin: 0.2em;
+ margin: 0.2em;
  }
 }
 footer {
@@ -225,41 +225,41 @@ footer ul li {
  border-top-left-radius: 9px;
 }
 
-.code-style-rules{
-  text-align: center;
-  border: 1px solid #789e4f;
-  border-radius: 10px;
-  padding-bottom: 2em;
-  margin-top: 2em;
+.code-style-rules {
+ text-align: center;
+ border: 1px solid #789e4f;
+ border-radius: 10px;
+ padding-bottom: 2em;
+ margin-top: 2em;
 }
 
-.code-style-rules p{
-  margin-top: 0.5em;
+.code-style-rules p {
+ margin-top: 0.5em;
 }
 
-.code-style-rules h2{
-  margin-top: 0;
-  padding-top: 1em;
+.code-style-rules h2 {
+ margin-top: 0;
+ padding-top: 1em;
 }
 
 /* Naming Convention */
 
-.naming-conventions{
-  text-align: center;
-  border: 1px solid #789e4f;
-  border-radius: 10px;
-  border-radius: 10px;
-  padding-bottom: 2em;
-  margin-top: 2em;
+.naming-conventions {
+ text-align: center;
+ border: 1px solid #789e4f;
+ border-radius: 10px;
+ border-radius: 10px;
+ padding-bottom: 2em;
+ margin-top: 2em;
 }
 
-.naming-conventions ul li{
-  list-style: none;
+.naming-conventions ul li {
+ list-style: none;
 }
 
-.naming-conventions h2{
-  margin-top: 0;
-  padding-top: 1em;
+.naming-conventions h2 {
+ margin-top: 0;
+ padding-top: 1em;
 }
 
 .naming-conventions-div:nth-child(2), .naming-conventions-div:nth-child(3) {
@@ -349,28 +349,28 @@ footer ul li {
 
 /* KONO NavBar */
 
-.KonoNav{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 8em;
+.KonoNav {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin-bottom: 8em;
 }
 
-.MainButton{
-  position: relative;
-  width: 10em;
-  z-index: 100;
-  height: 10em;
-  cursor: pointer;
+.MainButton {
+ position: relative;
+ width: 10em;
+ z-index: 100;
+ height: 10em;
+ cursor: pointer;
 }
 
-.Logo{
-  width: 10em;
-  height: 10em;
-  transition: 0.2s all ease-in;
-  animation-duration: 1s;
-  animation-fill-mode: both;
-  animation-timing-function: ease-in-out;
+.Logo {
+ width: 10em;
+ height: 10em;
+ transition: 0.2s all ease-in;
+ animation-duration: 1s;
+ animation-fill-mode: both;
+ animation-timing-function: ease-in-out;
 }
 
 @keyframes tilting {
@@ -390,7 +390,7 @@ footer ul li {
  width: 5.5em;
  height: 5.5em;
  z-index: -1;
-  left: 2.3em;
+ left: 2.3em;
  top: 2.4em;
  background-color: #789e4f;
  border-radius: 5em;
@@ -398,72 +398,72 @@ footer ul li {
  transition: 0.2s all ease-in;
 }
 
-.Logo.out{
-  transform: rotate(45deg);
+.Logo.out {
+ transform: rotate(45deg);
 }
 
-.HomeButton.out{
-  left: -6.4em;
-  top: 1.2em;
+.HomeButton.out {
+ left: -6.4em;
+ top: 1.2em;
 }
 
-.EventButton.out{
-  left: -4em;
-  top: 7.7em;
+.EventButton.out {
+ left: -4em;
+ top: 7.7em;
 }
 
-.UserButton.out{
-  left: 2.2em;
-  top: 10.3em;
+.UserButton.out {
+ left: 2.2em;
+ top: 10.3em;
 }
 
-.HomeButton img{
-  padding: 0.4em 0.2em;
-  width: 5em;
-  height: 5em;
+.HomeButton img {
+ padding: 0.4em 0.2em;
+ width: 5em;
+ height: 5em;
 }
 
-.HomeButton.out{
-  left: -6.4em;
-  top: 1.2em;
+.HomeButton.out {
+ left: -6.4em;
+ top: 1.2em;
 }
 
-.EventButton.out{
-  left: -4em;
-  top: 7.7em;
+.EventButton.out {
+ left: -4em;
+ top: 7.7em;
 }
 
-.UserButton.out{
-  left: 2.2em;
-  top: 10.3em;
+.UserButton.out {
+ left: 2.2em;
+ top: 10.3em;
 }
 
-.EventButton img{
-  padding-left: 0.7em;
-  padding-top: 0.8em;
-  width: 4.2em;
-  height: 4.2em;
+.EventButton img {
+ padding-left: 0.7em;
+ padding-top: 0.8em;
+ width: 4.2em;
+ height: 4.2em;
 }
 
-.UserButton img{
-  padding-left: 1em;
-  padding-top: 0.8em;
-  width: 4em;
-  height: 3.8em;
+.UserButton img {
+ padding-left: 1em;
+ padding-top: 0.8em;
+ width: 4em;
+ height: 3.8em;
 }
 
-.HomeButton:hover{
-  background-color: #e38003;
-  border-color: #b26403;
+.HomeButton:hover {
+ background-color: #e38003;
+ border-color: #b26403;
 }
-.EventButton:hover{
-  background-color: #e38003;
-  border-color: #b26403;
+.EventButton:hover {
+ background-color: #e38003;
+ border-color: #b26403;
 }
 
-.UserButton:hover{
-  background-color: #e38003;
-  border-color: #b26403;
+.UserButton:hover {
+ background-color: #e38003;
+ border-color: #b26403;
 }
 
 /* CODE SNIPPETS */
