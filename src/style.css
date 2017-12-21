@@ -341,13 +341,13 @@ input[type="radio"]:hover + label:before {
 
 
 /* dropdown styling */
-#drop {
+.component-drop {
  display: flex;
  flex-direction: column;
  align-items: center;
 }
 
-#drop .selectstyle {
+.component-drop .selectstyle {
  border: 1px solid #ccc;
  width: 120px;
  border-radius: 3px;
@@ -359,7 +359,7 @@ input[type="radio"]:hover + label:before {
  border-radius: 2em;
 }
 
-#drop select {
+.component-drop select {
  color: #557037;
  display: flex;
  align-items: center;
@@ -376,13 +376,13 @@ input[type="radio"]:hover + label:before {
 }
 
 /* textfield styling */
-#textfield {
+.component-textfield {
  display: flex;
  align-items: center;
  flex-direction: column;
 }
 
-#textfield input {
+.component-textfield input {
  color: #557037;
  background-color: #bed09f;
  border-width: 2px;

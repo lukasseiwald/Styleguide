@@ -411,20 +411,18 @@
 
   <section id="library">
       <h1>Component Library</h1>
-      <section class="subsection">
-          <div class="component-lists">
+      <section class="component-wrapper">
+          <section class="component-lists">
               <h2>Lists</h2>
               <ul>
                   <li>List Element 1</li>
                   <li>List Element 2</li>
                   <li>List Element 3</li>
               </ul>
-          </div>
-      </section>
-      <section class="subsection">
-          <h2>Form-Elements</h2>
-          <div class="component-radio">
-              <h3>Radio Buttons</h3>
+          </section>
+          <section class="component-radio">
+              <h2>Form-Elements</h2>
+                  <h3>Radio Buttons</h3>
                  <ul>
                      <li>
                         <input type="radio" name="options" id="radio1">
@@ -439,46 +437,47 @@
                         <label for="radio3">Option 3</label>
                      </li>
                  </ul>
-          </div>
-          <div id="textfield">
+          </section>
+          <section class="component-textfield">
               <h3>Textfields</h3>
               <input type="text">
-          </div>
-          <div id="drop">
-              <h3>Dropdown</h3>
-              <div class ="selectstyle">
-                  <select>
-                      <option>Option 1</option>
-                      <option>Option 2</option>
-                      <option>Option 3</option>
-                  </select>
-              </div>
-          </div>
-      </section>
+          </section>
+          <section class="component-drop">
+                  <h3>Dropdown</h3>
+                  <div class ="selectstyle">
+                      <select>
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                      </select>
+                  </div>
+          </section>
 
-      <section class="subsection">
-          <h2>Nav Menu</h2>
-          <div class="KonoNav">
-            <div class="MainButton" onclick="KonoNavOn()">
-              <img class="Logo" src="img/LogoKonoRand.png" onmouseover="hover(this);" onmouseout="unhover(this);"/>
-              <div class="SubButton" class="HomeButton">
-                <img src="img/home.png"/>
+          <section class="component-nav">
+              <h2>Nav Menu</h2>
+              <div class="KonoNav">
+                <div class="MainButton" onclick="KonoNavOn()">
+                  <img class="Logo" src="img/LogoKonoRand.png" onmouseover="hover(this);" onmouseout="unhover(this);"/>
+                  <div class="SubButton" class="HomeButton">
+                    <img src="img/home.png"/>
+                  </div>
+                  <div class="SubButton" class="EventButton">
+                    <img src="img/event.png"/>
+                  </div>
+                  <div class="SubButton" class="UserButton">
+                    <img src="img/profile.png"/>
+                  </div>
+                </div>
               </div>
-              <div class="SubButton" class="EventButton">
-                <img src="img/event.png"/>
-              </div>
-              <div class="SubButton" class="UserButton">
-                <img src="img/profile.png"/>
-              </div>
-            </div>
-          </div>
+          </section>
+          <section class="copmonent-button">
+              <h2>Buttons</h2>
+              <section class="menubutton">
+                  <button class="b1">Inventory</button>
+                  <button class="b2">Guestlist</button>
+              </section>
+          </section>
       </section>
-      <h2>Buttons</h2>
-      <section class="menubutton">
-          <button class="b1">Inventory</button>
-          <button class="b2">Guestlist</button>
-      </section>
-  </section>
 </section>
 
 <footer>
