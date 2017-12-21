@@ -409,52 +409,88 @@
       </section>
   </section>
 
-  <section id="library">
+  <section class="library">
       <h1>Component Library</h1>
       <section class="component-wrapper">
-          <section class="component-lists">
+          <div class="component-title">
               <h2>Lists</h2>
+          </div>
+          <section class="component-lists">
               <ul>
                   <li>List Element 1</li>
                   <li>List Element 2</li>
                   <li>List Element 3</li>
               </ul>
+              <h4>HTML</h4>
+              <section class="cs-component-container">
+                  <code>
+                      &lt;<span class="cs-htmltag">div</span>> <span class="cs-class">class</span>=<span class="cs-classname">"component-lists"</span>> <br />
+                      <span class="cs-spaces">ss</span> &lt;<span class="cs-htmltag">ul</span>> <br />
+                      <span class="cs-spaces">ssss</span> &lt;<span class="cs-htmltag">li</span>>List Element&lt;/<span class="cs-htmltag">li</span>><br/>
+                      <span class="cs-spaces">ssss</span> &lt;<span class="cs-htmltag">li</span>>List Element&lt;/<span class="cs-htmltag">li</span>><br/>
+                      <span class="cs-spaces">ssss</span> &lt;<span class="cs-htmltag">li</span>>List Element&lt;/<span class="cs-htmltag">li</span>><br/>
+                      <span class="cs-spaces">ss</span> &lt;/<span class="cs-htmltag">ul</span>> <br />
+                      &lt;/<span class="cs-htmltag">div</span>> <br />
+                  </code>
+              </section>
+              <h4>CSS</h4>
+              <section class="cs-component-container">
+                  <code>
+                      <span class="cs-classname">.component-lists</span> { <br />
+                      <span class="cs-spaces">ss</span> <span class="cs-cssproperty">color:</span> #557037; <br />
+                      <span class="cs-spaces">ss</span> <span class="cs-cssproperty">list-style-type:</span> circle; <br />
+                      }
+                  </code>
+              </section>
           </section>
-          <section class="component-radio">
+      </section>
+      <section class="component-wrapper">
+          <div class="component-title">
               <h2>Form-Elements</h2>
-                  <h3>Radio Buttons</h3>
-                 <ul>
-                     <li>
-                        <input type="radio" name="options" id="radio1">
-                        <label for="radio1">Option 1</label>
-                     </li>
-                     <li>
-                        <input type="radio" name="options" id="radio2">
-                        <label for="radio2">Option 2</label>
-                     </li>
-                     <li>
-                        <input type="radio" name="options" id="radio3">
-                        <label for="radio3">Option 3</label>
-                     </li>
-                 </ul>
+          </div>
+          <section class="component-radio">
+             <h3>Radio Buttons</h3>
+             <ul>
+                 <li>
+                    <input type="radio" name="options" id="radio1">
+                    <label for="radio1">Option 1</label>
+                 </li>
+                 <li>
+                    <input type="radio" name="options" id="radio2">
+                    <label for="radio2">Option 2</label>
+                 </li>
+                 <li>
+                    <input type="radio" name="options" id="radio3">
+                    <label for="radio3">Option 3</label>
+                 </li>
+             </ul>
+             <h4>HTML</h4>
+             <h4>CSS</h4>
           </section>
           <section class="component-textfield">
               <h3>Textfields</h3>
               <input type="text">
+              <h4>HTML</h4>
+              <h4>CSS</h4>
           </section>
           <section class="component-drop">
-                  <h3>Dropdown</h3>
-                  <div class ="selectstyle">
-                      <select>
-                          <option>Option 1</option>
-                          <option>Option 2</option>
-                          <option>Option 3</option>
-                      </select>
-                  </div>
+              <h3>Dropdown</h3>
+              <div class ="selectstyle">
+                  <select>
+                      <option>Option 1</option>
+                      <option>Option 2</option>
+                      <option>Option 3</option>
+                  </select>
+              </div>
+              <h4>HTML</h4>
+              <h4>CSS</h4>
           </section>
-
-          <section class="component-nav">
+      </section>
+      <section class="component-wrapper">
+          <div class="component-title">
               <h2>Nav Menu</h2>
+          </div>
+          <section class="component-nav">
               <div class="KonoNav">
                 <div class="MainButton" onclick="KonoNavOn()">
                   <img class="Logo" src="img/LogoKonoRand.png" onmouseover="hover(this);" onmouseout="unhover(this);"/>
@@ -469,14 +505,23 @@
                   </div>
                 </div>
               </div>
+              <h4>HTML</h4>
+              <h4>CSS</h4>
           </section>
-          <section class="copmonent-button">
+      </section>
+      <section class="component-wrapper">
+          <div class="component-title">
               <h2>Buttons</h2>
+          </div>
+          <section class="copmonent-button">
               <section class="menubutton">
                   <button class="b1">Inventory</button>
                   <button class="b2">Guestlist</button>
               </section>
+              <h4>HTML</h4>
+              <h4>CSS</h4>
           </section>
+      </section>
       </section>
 </section>
 

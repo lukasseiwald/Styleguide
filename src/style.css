@@ -396,6 +396,29 @@ input[type="radio"]:hover + label:before {
  -moz-appearance: none;
 }
 
+/* component-library */
+.library {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.component-wrapper {
+  border-style: solid;
+  border-color: #789e4f;
+  border-width: 1px;
+  padding-bottom: 2em;
+  margin-top: 1em;
+  border-radius: 10px;
+}
+.component-title {
+  background-color: #bed09f;
+  border-top-right-radius: 9px;
+  border-top-left-radius: 9px;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  margin-bottom: 1.5em;
+}
+
+
 /* KONO NavBar */
 
 .KonoNav {
@@ -527,17 +550,8 @@ input[type="radio"]:hover + label:before {
   align-items: center;
   flex-direction: column;
 }
-.component-lists ul {
-  background-color: #bed09f;
-  padding: 1em;
-  padding-left: 1.5em;
-  border-color: #557037;
-  border-radius: 1em;
-  border-width: 2px;
-  border-style: solid;
-  color: #557037;
-}
 .component-lists ul li{
+  color: #557037;
   list-style-type: circle;
 }
 
@@ -590,6 +604,18 @@ input[type="radio"]:hover + label:before {
  margin-left: 0.5em;
  margin-right: 0.5em;
  font-size: 0.8em;
+}
+
+.cs-component-container {
+  background-color: #bed09f;
+  border: 3px solid #789e4f;
+  border-radius: 1em;
+  font-family: Courier, monospace;
+  width: 90%;
+  padding: 1em;
+  margin-bottom: 1em;
+  text-align: left;
+  display: block;
 }
 
 /* FONTS */
