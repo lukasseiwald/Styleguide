@@ -4,6 +4,13 @@
  box-sizing: border-box;
  font-family: 'Roboto Slab', serif;
 }
+<<<<<<< HEAD
+#wrapper{
+  width: 60vw;
+  margin: 5em auto;
+}
+
+=======
 .wrapper {
  width: 60vw;
  margin: 5em auto;
@@ -20,6 +27,7 @@
  }
 }
 
+>>>>>>> f759c9e1ce3b1576c5d54d3c7c7700801b87348b
 /* BRAND GUIDE */
 
 .typography {
@@ -27,6 +35,11 @@
  padding-bottom: 1em;
 }
 
+<<<<<<< HEAD
+.colors, .introduction, .typography, .logo-section{
+  border: 1px solid #789e4f;
+  border-radius: 10px;
+=======
 .colors, .introduction, .typography, .logo-section {
  border: 1px solid #789e4f;
  border-radius: 10px;
@@ -35,6 +48,7 @@
 
 .introduction {
  margin-top: 2em;
+>>>>>>> f759c9e1ce3b1576c5d54d3c7c7700801b87348b
 }
 .colors-header, .introduction-header, .typography-header, .logo-header {
  width: 100%;
