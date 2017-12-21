@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: 'Roboto Slab', serif;
 }
 #wrapper{
@@ -44,8 +45,7 @@ a.logo-button-download{
   align-items: center;
   background-color: #bed09f;
   border: 0.2em solid #789e4f;
-  padding: 0.7em;
-  width: 10em;
+  padding: 0.7em 1em;
   border-radius: 1em;
   text-transform: uppercase;
   transition: all 0.5s ease;
@@ -83,6 +83,10 @@ h3{
   color: #e38003;
   font-size: 1.1em;
   margin: 1em 0;
+}
+h4{
+  color: #557037;
+  margin-top: 1em;
 }
 .color{
   cursor: pointer;
@@ -134,9 +138,10 @@ footer ul li{
 
 
 #KonoNav{
-  margin-left: 70%;
-  margin-top: 5em;
-  margin-bottom: 10em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8em;
 }
 
 #MainButton{
@@ -202,8 +207,7 @@ footer ul li{
 
 
 #HomeButton img{
-  padding-left: 0.3em;
-  padding-top: 0.2em;
+  padding: 0.4em 0.2em;
   width: 5em;
   height: 5em;
 }
@@ -224,8 +228,6 @@ footer ul li{
   top: 10.3em;
 }
 
-
-
 #EventButton img{
   padding-left: 0.7em;
   padding-top: 0.8em;
@@ -236,8 +238,8 @@ footer ul li{
 #UserButton img{
   padding-left: 1em;
   padding-top: 0.8em;
-  width: 3.5em;
-  height: 3.5em;
+  width: 4em;
+  height: 3.8em;
 }
 
 #HomeButton:hover{
@@ -289,8 +291,24 @@ footer ul li{
   width: auto;
 }
 
+/* Methodology */
+
+/* Code-Style */
+
+.methodology-header{
+  margin-bottom: 2.5em;
+  background-color: #bed09f;
+  padding-bottom: 1.5em;
+  border-top-right-radius: 9px;
+  border-top-left-radius: 9px;
+}
+
 #code-style-rules{
   text-align: center;
+  border: 1px solid #789e4f;
+  border-radius: 10px;
+  padding-bottom: 2em;
+  margin-top: 2em;
 }
 
 #code-style-rules p{
@@ -298,44 +316,67 @@ footer ul li{
 }
 
 #code-style-rules h2{
-  margin-top: 1.5em;
+  margin-top: 0;
+  padding-top: 1em;
 }
+
+/* Naming Convention */
 
 #naming-conventions{
   text-align: center;
+  border: 1px solid #789e4f;
+  border-radius: 10px;
+  border-radius: 10px;
+  padding-bottom: 2em;
+  margin-top: 2em;
 }
 
 #naming-conventions ul li{
   list-style: none;
+}
+
+#naming-conventions h2{
+  margin-top: 0;
+  padding-top: 1em;
+}
+
+.naming-conventions-div:nth-child(2), .naming-conventions-div:nth-child(3){
+  margin-top: 2em;
+  line-height: 1.6em;
+  border-bottom: 1px solid #789e4f;
+}
+
+.naming-conventions-div-container{
+  display: flex;
+  flex-flow: column;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+
+.naming-conventions-div-container div{
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.naming-conventions-div-container div p, ul, section{
   margin-top: 1em;
 }
 
-.cs-container-inline{
-  border: 2px solid #789e4f;
-  background-color: #bed09f;
-  border-radius: 3px;
-  width: 10px;
-  padding-left: 5px;
-  padding-right: 2px;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
 /* radio button styling */
-#library #radio{
+#radio{
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
 /* dropdown styling */
-#library #drop{
+#drop{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#library #drop .selectstyle{
+#drop .selectstyle{
   border: 1px solid #ccc;
   width: 120px;
   border-radius: 3px;
@@ -347,20 +388,43 @@ footer ul li{
   border-radius: 2em;
 }
 
-#library #drop select{
+#drop select{
+  color: #557037;
   display: flex;
   align-items: center;
   padding: 1em;
   padding-top: 0.3em;
   padding-bottom: 0.3em;
-  padding: 5px 8px;
   width: 130%;
   border: none;
   box-shadow: none;
   background: transparent;
   background-image: none;
   -webkit-appearance: none;
+  -moz-appearance: none;
 }
+
+/* textfield styling */
+#textfield{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#textfield input{
+  color: #557037;
+  background-color: #bed09f;
+  border-width: 2px;
+  border-color: #557037;
+  border-style: solid;
+  border-radius: 2em;
+  padding: 1em;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
 
 /* CODE SNIPPETS */
 
@@ -372,6 +436,8 @@ footer ul li{
   width: 100%;
   padding: 1em;
   margin-bottom: 1em;
+  text-align: left;
+  display: block;
 }
 .cs-cssproperty{
   color:#e38003;
@@ -396,6 +462,18 @@ footer ul li{
   color: #789e4f;
   border-bottom: 2px solid #789e4f;
   width: 100%;
+}
+
+.cs-container-inline{
+  border: 2px solid #789e4f;
+  background-color: #bed09f;
+  border-radius: 3px;
+  width: 0.4em;
+  padding-left: 0.5em;
+  padding-right: 0.4em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  font-size: 0.8em;
 }
 
 /* FONTS */
