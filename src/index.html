@@ -479,9 +479,30 @@
                           <span class="cs-classname">input[type=radio]</span> { <br/>
                           <span class="cs-spaces">ss</span> <span class="cs-cssproperty">display:</span> none; <br />
                           }<br/>
-                          <span class="cs-classname">input[type=radio]</span> { <br/>
-                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">display:</span> none; <br />
-                          }
+                          <span class="cs-classname">input[type=radio] + label:before</span> { <br/>
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">background-color:</span> #bed09f; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">border-width:</span> 2px; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">border-style:</span> solid; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">birder-color:</span> #557037; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">height:</span> 1em; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">width:</span> 1em; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">border-radius:</span> 50%; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">content:</span> ""; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">margin-top:</span> -0.2em; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">margin-right:</span> 0.4em; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">display:</span> inline-block; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">vertical-align:</span> middle; <br />
+                          }<br/>
+                          <span class="cs-classname">input[type=radio]:checked:hover + label:before</span> { <br/>
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">background-color:</span> #d9b01d; <br />
+                          }<br/>
+                          <span class="cs-classname">input[type=radio]:checked + label:before</span> { <br/>
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">background-color:</span> #789e4f; <br />
+                          }<br/>
+                          <span class="cs-classname">input[type=radio]:hover + label:before</span> { <br/>
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">background-color:</span> #fee332; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">border-color:</span> #c17a05; <br />
+                          }<br/>
                       </code>
                   </section>
               </section>
@@ -489,7 +510,29 @@
                   <h3>Textfields</h3>
                   <input type="text">
                   <h4>HTML</h4>
+                  <section class="cs-component-container">
+                      <code>
+                          &lt;<span class="cs-htmltag">input</span><span class="cs-class"> type</span>=<span class="cs-classname">"text"</span>> <br />
+                      </code>
+                  </section>
                   <h4>CSS</h4>
+                  <section class="cs-component-container">
+                      <code>
+                          <span class="cs-classname">input</span> { <br/>
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">color:</span> #557037; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">background-color:</span> #bed09f; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">border-width:</span> 2px; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">border-color:</span> #557037; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">border-style:</span> solid; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">border-radius:</span> 2em; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">padding:</span> 1em; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">padding-top:</span> 0.4em; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">padding-bottom:</span> 0.4em; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">-webkit-appearance:</span> none; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">-moz-appearance:</span> none; <br />
+                          }<br/>
+                      </code>
+                  </section>
               </section>
               <section class="component-drop">
                   <h3>Dropdown</h3>
