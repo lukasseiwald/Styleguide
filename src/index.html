@@ -411,69 +411,134 @@
   </section>
 
   <section id="link-library">
-      <h1>Component Library</h1>
-      <section class="subsection">
-          <h2>Headings</h2>
-      </section>
-      <section class="subsection">
-          <h2>Lists</h2>
-      </section>
-      <section class="subsection">
-          <h1>Another Component</h1>
-
-          <h1>Form-Elements</h1>
-          <div id="radio">
-              <h2>Radio Buttons</h2>
-                  <div>
-                      <input type="radio" name="options" id="radio1">
-                      <label>Option1<span></span></label>
+      <section class="library">
+          <h1>Component Library</h1>
+          <section class="component-wrapper">
+              <div class="component-title">
+                  <h2>Lists</h2>
+              </div>
+              <section class="component-lists">
+                  <ul>
+                      <li>List Element 1</li>
+                      <li>List Element 2</li>
+                      <li>List Element 3</li>
+                  </ul>
+                  <h4>HTML</h4>
+                  <section class="cs-component-container">
+                      <code>
+                          &lt;<span class="cs-htmltag">div</span>> <br />
+                          <span class="cs-spaces">ss</span> &lt;<span class="cs-htmltag">ul</span>> <br />
+                          <span class="cs-spaces">ssss</span> &lt;<span class="cs-htmltag">li</span>>List Element&lt;/<span class="cs-htmltag">li</span>><br/>
+                          <span class="cs-spaces">ssss</span> &lt;<span class="cs-htmltag">li</span>>List Element&lt;/<span class="cs-htmltag">li</span>><br/>
+                          <span class="cs-spaces">ssss</span> &lt;<span class="cs-htmltag">li</span>>List Element&lt;/<span class="cs-htmltag">li</span>><br/>
+                          <span class="cs-spaces">ss</span> &lt;/<span class="cs-htmltag">ul</span>> <br />
+                          &lt;/<span class="cs-htmltag">div</span>> <br />
+                      </code>
+                  </section>
+                  <h4>CSS</h4>
+                  <section class="cs-component-container">
+                      <code>
+                          <span class="cs-classname">li</span> { <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">color:</span> #557037; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">list-style-type:</span> circle; <br />
+                          }
+                      </code>
+                  </section>
+              </section>
+          </section>
+          <section class="component-wrapper">
+              <div class="component-title">
+                  <h2>Form-Elements</h2>
+              </div>
+              <section class="component-radio">
+                  <h3>Radio Buttons</h3>
+                  <ul>
+                      <li>
+                          <input type="radio" name="options" id="radio1">
+                          <label for="radio1">Option 1</label>
+                      </li>
+                      <li>
+                          <input type="radio" name="options" id="radio2">
+                          <label for="radio2">Option 2</label>
+                      </li>
+                      <li>
+                          <input type="radio" name="options" id="radio3">
+                          <label for="radio3">Option 3</label>
+                      </li>
+                  </ul>
+                  <h4>HTML</h4>
+                  <section class="cs-component-container">
+                      <code>
+                          &lt;<span class="cs-htmltag">input</span><span class="cs-class"> type</span>=<span class="cs-classname">"radio"</span><span class="cs-class"> name</span>=<span class="cs-classname">"options"</span><span class="cs-class"> id</span>=<span class="cs-classname">"option1"</span>> <br />
+                          &lt;<span class="cs-htmltag">label</span><span class="cs-class"> for</span>=<span class="cs-classname">"option1"</span>>Option&lt;/<span class="cs-htmltag">label</span>> <br />
+                      </code>
+                  </section>
+                  <h4>CSS</h4>
+                  <section class="cs-component-container">
+                      <code>
+                          <span class="cs-classname">input[type=radio]</span> { <br/>
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">display:</span> none; <br />
+                          }<br/>
+                          <span class="cs-classname">input[type=radio]</span> { <br/>
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">display:</span> none; <br />
+                          }
+                      </code>
+                  </section>
+              </section>
+              <section class="component-textfield">
+                  <h3>Textfields</h3>
+                  <input type="text">
+                  <h4>HTML</h4>
+                  <h4>CSS</h4>
+              </section>
+              <section class="component-drop">
+                  <h3>Dropdown</h3>
+                  <div class ="selectstyle">
+                      <select>
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                      </select>
                   </div>
-                  <div>
-                      <input type="radio" name="options" id="radio2">
-                      <label>Option2<span></span></label>
+                  <h4>HTML</h4>
+                  <h4>CSS</h4>
+              </section>
+          </section>
+          <section class="component-wrapper">
+              <div class="component-title">
+                  <h2>Buttons</h2>
+              </div>
+              <section class="copmonent-button">
+                  <section class="menubutton">
+                      <button class="b1">Inventory</button>
+                      <button class="b2">Guestlist</button>
+                  </section>
+                  <h4>HTML</h4>
+                  <h4>CSS</h4>
+              </section>
+          </section>
+      </section>
+      <section class="component-wrapper">
+          <section class="subsection">
+              <div class="component-title">
+                  <h2>Nav Menu</h2>
+              </div>
+              <div class="KonoNav">
+                <div class="MainButton" onclick="KonoNavOn()">
+                  <img id="Logo" src="img/LogoKonoRand.png" onmouseover="hover(this);" onmouseout="unhover(this);"/>
+                  <div class="SubButton" id="HomeButton">
+                    <img src="img/home.png"/>
                   </div>
-              </ul>
-          </div>
-          <div id="textfield">
-              <h2>Textfields</h2>
-              <input type="text">
-          </div>
-          <div id="drop">
-              <h2>Dropdown</h2>
-              <div class ="selectstyle">
-                  <select>
-                      <option>Option 1</option>
-                      <option>Option 2</option>
-                      <option>Option 3</option>
-                  </select>
+                  <div class="SubButton" id="EventButton">
+                    <img src="img/event.png"/>
+                  </div>
+                  <div class="SubButton" id="UserButton">
+                    <img src="img/profile.png"/>
+                  </div>
+                </div>
               </div>
-          </div>
+          </section>
       </section>
-
-      <section class="subsection">
-          <h2>Nav Menu</h2>
-          <div class="KonoNav">
-            <div class="MainButton" onclick="KonoNavOn()">
-              <img id="Logo" src="img/LogoKonoRand.png" onmouseover="hover(this);" onmouseout="unhover(this);"/>
-              <div class="SubButton" id="HomeButton">
-                <img src="img/home.png"/>
-              </div>
-              <div class="SubButton" id="EventButton">
-                <img src="img/event.png"/>
-              </div>
-              <div class="SubButton" id="UserButton">
-                <img src="img/profile.png"/>
-              </div>
-            </div>
-          </div>
-      </section>
-      <h2>Buttons</h2>
-      <section class="menubutton">
-          <button class="b1">Inventory</button>
-          <button class="b2">Guestlist</button>
-      </section>
-      <img src="img/ButtonSnippet.png"/>
-
   </section>
 </section>
 
