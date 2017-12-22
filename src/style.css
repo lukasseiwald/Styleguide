@@ -346,11 +346,10 @@ input[type="radio"]:hover + label:before {
 }
 
 .component-drop .selectstyle {
- border: 1px solid #ccc;
+ border-style: solid;
  width: 120px;
- border-radius: 3px;
  overflow: hidden;
- background: #fafafa url("droparrow.png") no-repeat 90% 50%;
+ background: url("droparrow.png") no-repeat 90% 50%;
  background-color: #bed09f;
  border-color: #557037;
  border-width: 2px;
@@ -360,10 +359,9 @@ input[type="radio"]:hover + label:before {
 .component-drop select {
  color: #557037;
  display: flex;
- align-items: center;
  padding: 1em;
- padding-top: 0.3em;
- padding-bottom: 0.3em;
+ padding-top: 0.4em;
+ padding-bottom: 0.4em;
  width: 130%;
  border: none;
  box-shadow: none;
