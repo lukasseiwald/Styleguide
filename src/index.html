@@ -11,21 +11,21 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto+Slab" rel="stylesheet">
 </head>
 <body>
-<header class="header">
-  <div class="burger-wrapper" onclick="dropDown()">
+<header>
+  <div class="burgerwrapper" onclick="dropDown()">
     <div class="burger" id="burgerDrop"></div>
   </div>
     Frontend Styleguide Assignment
     <nav id="navDrop">
       <ul>
         <li>
-          <a href="#link-brandguide">Brand Guide</a>
+          <a href="#brandguide">Brand Guide</a>
         </li>
         <li>
-          <a href="#link-methodology">CSS Mythodology</a>
+          <a href="#methodology">CSS Mythodology</a>
         </li>
         <li>
-          <a href="#link-library">Component Library</a>
+          <a href="#library">Component Library</a>
         </li>
       </ul>
     </nav>
@@ -51,7 +51,7 @@
   <div class="logo">
     <img src="img/LogoKonofertig.png" title="Kono Logo" alt="Kono Title" />
   </div>
-  <section id="link-brandguide" class="brandguide" >
+  <section id="brandguide">
     <h1>Brand Guide</h1>
     <section class="introduction">
       <div class="introduction-header">
@@ -117,7 +117,7 @@
       <div class="typography-header">
         <h2>Typography</h2>
       </div>
-        <p class="typography-description">
+        <p id="typoDescription">
           em-Angaben abhängig von Standardgröße 16px
         </p>
         <div class="typowrapper">
@@ -134,12 +134,11 @@
           Roboto Slab
           <div class="Roboto">
             <p class="R1">Display Regular 2.5em</p>
-            <h1>Heading Regular 2em (h1)</h1>
-            <h2>Subheading Regular 1.4em (h2)</h2>
-            <h3>Subsubheading Regular 1.1em (h3)</h3>
-            <h4>Subsubheading Regular 0.9em (h4)</h4>
-            <p>Body Regular 1em</p>
-            <p>Button ALL CAPS Regular 1.8em</p>
+            <p class="R2">Heading Regular 2em (h1)</p>
+            <p class="R3">Subheading Regular 1.4em (h2)</p>
+            <p class="R4">Body Light 1em</p>
+            <p class="R5">Caption Light 0.8em</p>
+            <p class="R6">Button ALL CAPS Bold 1.8em</p>
           </div>
         </div>
     </section>
@@ -166,7 +165,7 @@
     </section>
   </section>
 
-  <section class="methodology" id="link-methodology">
+  <section class="methodology">
       <h1>CSS Methodology</h1>
       <section class="code-style-rules">
           <div class="methodology-header">
@@ -410,36 +409,88 @@
       </section>
   </section>
 
-  <section id="link-library">
+  <section class="library">
       <h1>Component Library</h1>
-      <section class="subsection">
-          <h2>Headings</h2>
-      </section>
-      <section class="subsection">
-          <h2>Lists</h2>
-      </section>
-      <section class="subsection">
-          <h1>Another Component</h1>
-
-          <h1>Form-Elements</h1>
-          <div id="radio">
-              <h2>Radio Buttons</h2>
-                  <div>
-                      <input type="radio" name="options" id="radio1">
-                      <label>Option1<span></span></label>
-                  </div>
-                  <div>
-                      <input type="radio" name="options" id="radio2">
-                      <label>Option2<span></span></label>
-                  </div>
+      <section class="component-wrapper">
+          <div class="component-title">
+              <h2>Lists</h2>
+          </div>
+          <section class="component-lists">
+              <ul>
+                  <li>List Element 1</li>
+                  <li>List Element 2</li>
+                  <li>List Element 3</li>
               </ul>
+              <h4>HTML</h4>
+              <section class="cs-component-container">
+                  <code>
+                      &lt;<span class="cs-htmltag">div</span>> <br />
+                      <span class="cs-spaces">ss</span> &lt;<span class="cs-htmltag">ul</span>> <br />
+                      <span class="cs-spaces">ssss</span> &lt;<span class="cs-htmltag">li</span>>List Element&lt;/<span class="cs-htmltag">li</span>><br/>
+                      <span class="cs-spaces">ssss</span> &lt;<span class="cs-htmltag">li</span>>List Element&lt;/<span class="cs-htmltag">li</span>><br/>
+                      <span class="cs-spaces">ssss</span> &lt;<span class="cs-htmltag">li</span>>List Element&lt;/<span class="cs-htmltag">li</span>><br/>
+                      <span class="cs-spaces">ss</span> &lt;/<span class="cs-htmltag">ul</span>> <br />
+                      &lt;/<span class="cs-htmltag">div</span>> <br />
+                  </code>
+              </section>
+              <h4>CSS</h4>
+              <section class="cs-component-container">
+                  <code>
+                      <span class="cs-classname">li</span> { <br />
+                      <span class="cs-spaces">ss</span> <span class="cs-cssproperty">color:</span> #557037; <br />
+                      <span class="cs-spaces">ss</span> <span class="cs-cssproperty">list-style-type:</span> circle; <br />
+                      }
+                  </code>
+              </section>
+          </section>
+      </section>
+      <section class="component-wrapper">
+          <div class="component-title">
+              <h2>Form-Elements</h2>
           </div>
-          <div id="textfield">
-              <h2>Textfields</h2>
+          <section class="component-radio">
+              <h3>Radio Buttons</h3>
+              <ul>
+                 <li>
+                    <input type="radio" name="options" id="radio1">
+                    <label for="radio1">Option 1</label>
+                 </li>
+                 <li>
+                    <input type="radio" name="options" id="radio2">
+                    <label for="radio2">Option 2</label>
+                 </li>
+                 <li>
+                    <input type="radio" name="options" id="radio3">
+                    <label for="radio3">Option 3</label>
+                 </li>
+              </ul>
+              <h4>HTML</h4>
+              <section class="cs-component-container">
+                  <code>
+                      &lt;<span class="cs-htmltag">input</span><span class="cs-class"> type</span>=<span class="cs-classname">"radio"</span><span class="cs-class"> name</span>=<span class="cs-classname">"options"</span><span class="cs-class"> id</span>=<span class="cs-classname">"option1"</span>> <br />
+                      &lt;<span class="cs-htmltag">label</span><span class="cs-class"> for</span>=<span class="cs-classname">"option1"</span>>Option&lt;/<span class="cs-htmltag">label</span>> <br />
+                  </code>
+              </section>
+              <h4>CSS</h4>
+              <section class="cs-component-container">
+                  <code>
+                      <span class="cs-classname">input[type=radio]</span> { <br/>
+                      <span class="cs-spaces">ss</span> <span class="cs-cssproperty">display:</span> none; <br />
+                      }<br/>
+                      <span class="cs-classname">input[type=radio]</span> { <br/>
+                      <span class="cs-spaces">ss</span> <span class="cs-cssproperty">display:</span> none; <br />
+                      }
+                  </code>
+              </section>
+          </section>
+          <section class="component-textfield">
+              <h3>Textfields</h3>
               <input type="text">
-          </div>
-          <div id="drop">
-              <h2>Dropdown</h2>
+              <h4>HTML</h4>
+              <h4>CSS</h4>
+          </section>
+          <section class="component-drop">
+              <h3>Dropdown</h3>
               <div class ="selectstyle">
                   <select>
                       <option>Option 1</option>
@@ -447,34 +498,47 @@
                       <option>Option 3</option>
                   </select>
               </div>
+              <h4>HTML</h4>
+              <h4>CSS</h4>
+          </section>
+      </section>
+      <section class="component-wrapper">
+          <div class="component-title">
+              <h2>Nav Menu</h2>
           </div>
+          <section class="component-nav">
+              <div class="KonoNav">
+                <div class="MainButton" onclick="KonoNavOn()">
+                  <img class="Logo" src="img/LogoKonoRand.png" onmouseover="hover(this);" onmouseout="unhover(this);"/>
+                  <div class="SubButton" class="HomeButton">
+                    <img src="img/home.png"/>
+                  </div>
+                  <div class="SubButton" class="EventButton">
+                    <img src="img/event.png"/>
+                  </div>
+                  <div class="SubButton" class="UserButton">
+                    <img src="img/profile.png"/>
+                  </div>
+                </div>
+              </div>
+              <h4>HTML</h4>
+              <h4>CSS</h4>
+          </section>
       </section>
-
-      <section class="subsection">
-          <h2>Nav Menu</h2>
-          <div class="KonoNav">
-            <div class="MainButton" onclick="KonoNavOn()">
-              <img id="Logo" src="img/LogoKonoRand.png" onmouseover="hover(this);" onmouseout="unhover(this);"/>
-              <div class="SubButton" id="HomeButton">
-                <img src="img/home.png"/>
-              </div>
-              <div class="SubButton" id="EventButton">
-                <img src="img/event.png"/>
-              </div>
-              <div class="SubButton" id="UserButton">
-                <img src="img/profile.png"/>
-              </div>
-            </div>
+      <section class="component-wrapper">
+          <div class="component-title">
+              <h2>Buttons</h2>
           </div>
+          <section class="copmonent-button">
+              <section class="menubutton">
+                  <button class="b1">Inventory</button>
+                  <button class="b2">Guestlist</button>
+              </section>
+              <h4>HTML</h4>
+              <h4>CSS</h4>
+          </section>
       </section>
-      <h2>Buttons</h2>
-      <section class="menubutton">
-          <button class="b1">Inventory</button>
-          <button class="b2">Guestlist</button>
       </section>
-      <img src="img/ButtonSnippet.png"/>
-
-  </section>
 </section>
 
 <footer>
