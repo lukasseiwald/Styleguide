@@ -185,19 +185,17 @@ footer ul li {
  margin: 0 1em;
 }
 
-.menubutton {
+/* menubuttons styling */
+
+.component-button {
  display: flex;
  align-items: center;
- flex-direction: row;
- justify-content: center;
+ flex-direction: column;
 }
-.menubutton button {
- margin:0.2em;
+.menubutton button{
  font-family: 'Lobster', bold;
  color: #fdfdfd;
  font-size: 2em;
- background-color: #789e4f;
- border-color: #557037;
  border-width: 3px;
  width: 5em;
  height: 5em;
@@ -205,19 +203,14 @@ footer ul li {
  border-radius: 50%;
  margin-bottom: 1em;
 }
-.menubutton button:hover {
- border-width: 0px;
-}
-.menubutton .b2 {
+.button1{
  background-color: #e38003;
  border-color: #b26403;
 }
-.menubutton img {
- height: 13em;
- width: auto;
+.button2{
+ background-color: #789e4f;
+ border-color: #557037;
 }
-
-/* Methodology */
 
 /* Code-Style */
 
