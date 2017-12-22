@@ -11,21 +11,21 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto+Slab" rel="stylesheet">
 </head>
 <body>
-<header>
-  <div class="burgerwrapper" onclick="dropDown()">
+<header class="header">
+  <div class="burger-wrapper" onclick="dropDown()">
     <div class="burger" id="burgerDrop"></div>
   </div>
     Frontend Styleguide Assignment
     <nav id="navDrop">
       <ul>
         <li>
-          <a href="#brandguide">Brand Guide</a>
+          <a href="#link-brandguide">Brand Guide</a>
         </li>
         <li>
-          <a href="#methodology">CSS Mythodology</a>
+          <a href="#link-methodology">CSS Mythodology</a>
         </li>
         <li>
-          <a href="#library">Component Library</a>
+          <a href="#link-library">Component Library</a>
         </li>
       </ul>
     </nav>
@@ -51,7 +51,7 @@
   <div class="logo">
     <img src="img/LogoKonofertig.png" title="Kono Logo" alt="Kono Title" />
   </div>
-  <section id="brandguide">
+  <section id="link-brandguide" class="brandguide" >
     <h1>Brand Guide</h1>
     <section class="introduction">
       <div class="introduction-header">
@@ -117,7 +117,7 @@
       <div class="typography-header">
         <h2>Typography</h2>
       </div>
-        <p id="typoDescription">
+        <p class="typography-description">
           em-Angaben abhängig von Standardgröße 16px
         </p>
         <div class="typowrapper">
@@ -134,11 +134,12 @@
           Roboto Slab
           <div class="Roboto">
             <p class="R1">Display Regular 2.5em</p>
-            <p class="R2">Heading Regular 2em (h1)</p>
-            <p class="R3">Subheading Regular 1.4em (h2)</p>
-            <p class="R4">Body Regular 1em</p>
-            <p class="R5">Caption Light 0.8em</p>
-            <p class="R6">Button ALL CAPS Bold 1.8em</p>
+            <h1>Heading Regular 2em (h1)</h1>
+            <h2>Subheading Regular 1.4em (h2)</h2>
+            <h3>Subsubheading Regular 1.1em (h3)</h3>
+            <h4>Subsubheading Regular 0.9em (h4)</h4>
+            <p>Body Regular 1em</p>
+            <p>Button ALL CAPS Regular 1.8em</p>
           </div>
         </div>
     </section>
@@ -165,7 +166,7 @@
     </section>
   </section>
 
-  <section class="methodology">
+  <section class="methodology" id="link-methodology">
       <h1>CSS Methodology</h1>
       <section class="code-style-rules">
           <div class="methodology-header">
@@ -408,7 +409,7 @@
       </section>
   </section>
 
-  <section id="library">
+  <section id="link-library">
       <h1>Component Library</h1>
       <section class="subsection">
           <h2>Headings</h2>

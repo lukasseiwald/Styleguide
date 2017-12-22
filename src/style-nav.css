@@ -41,7 +41,7 @@ header{
   color: #bed09f;
   text-decoration: none;
 }
-.burgerwrapper{
+.burger-wrapper{
   margin-top: 0.4em;
   cursor: pointer;
   position: absolute;
