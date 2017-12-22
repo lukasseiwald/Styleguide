@@ -4,10 +4,10 @@ function dropDown() {
 }
 
 function KonoNavOn(){
-  document.getElementsByClassName("Logo")[0].classList.toggle("out");
-  document.getElementsByClassName("HomeButton")[0].classList.toggle("out");
-  document.getElementsByClassName("EventButton")[0].classList.toggle("out");
-  document.getElementsByClassName("UserButton")[0].classList.toggle("out");
+  document.getElementById("Logo").classList.toggle("out");
+  document.getElementById("HomeButton").classList.toggle("out");
+  document.getElementById("EventButton").classList.toggle("out");
+  document.getElementById("UserButton").classList.toggle("out");
 
 }
 

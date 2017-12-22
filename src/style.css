@@ -289,20 +289,63 @@ footer ul li {
 }
 
 /* radio button styling */
-#radio {
+.component-radio {
  display: flex;
  align-items: center;
  flex-direction: column;
 }
+
+.component-radio ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.component-radio ul li {
+  padding-bottom: 0.2em;
+  list-style: none;
+  color: #557037;
+}
+.component-radio ul li :hover {
+  color: #c17a05;
+}
+input[type="radio"] {
+  display: none;
+}
+input[type="radio"] + label:before {
+  background-color: #bed09f;
+  border-width: 2px;
+  border-color: #557037;
+  border-style: solid;
+  height: 1em;
+  width: 1em;
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  margin-top: -0.2em;
+  margin-right: 0.4em;
+  vertical-align: middle;
+}
+input[type="radio"]:checked + label:before {
+  background-color: #789e4f;
+}
+input[type="radio"]:checked:hover + label:before {
+  background-color: #d9b01d;
+}
+input[type="radio"]:hover + label:before {
+  background-color: #fee332;
+  border-color: #c17a05;
+}
+
+
 
 /* dropdown styling */
-#drop {
+.component-drop {
  display: flex;
  flex-direction: column;
  align-items: center;
 }
 
-#drop .selectstyle {
+.component-drop .selectstyle {
  border: 1px solid #ccc;
  width: 120px;
  border-radius: 3px;
@@ -314,7 +357,7 @@ footer ul li {
  border-radius: 2em;
 }
 
-#drop select {
+.component-drop select {
  color: #557037;
  display: flex;
  align-items: center;
@@ -331,13 +374,13 @@ footer ul li {
 }
 
 /* textfield styling */
-#textfield {
+.component-textfield {
  display: flex;
  align-items: center;
  flex-direction: column;
 }
 
-#textfield input {
+.component-textfield input {
  color: #557037;
  background-color: #bed09f;
  border-width: 2px;
@@ -350,6 +393,29 @@ footer ul li {
  -webkit-appearance: none;
  -moz-appearance: none;
 }
+
+/* component-library */
+.library {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.component-wrapper {
+  border-style: solid;
+  border-color: #789e4f;
+  border-width: 1px;
+  padding-bottom: 2em;
+  margin-top: 1em;
+  border-radius: 10px;
+}
+.component-title {
+  background-color: #bed09f;
+  border-top-right-radius: 9px;
+  border-top-left-radius: 9px;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  margin-bottom: 1.5em;
+}
+
 
 /* KONO NavBar */
 
@@ -368,7 +434,7 @@ footer ul li {
  cursor: pointer;
 }
 
-.Logo {
+#Logo {
  width: 10em;
  height: 10em;
  transition: 0.2s all ease-in;
@@ -402,73 +468,86 @@ footer ul li {
  transition: 0.2s all ease-in;
 }
 
-.Logo.out {
+#Logo.out {
  transform: rotate(45deg);
 }
 
-.HomeButton.out {
+#HomeButton.out {
  left: -6.4em;
  top: 1.2em;
 }
 
-.EventButton.out {
+#äEventButton.out {
  left: -4em;
  top: 7.7em;
 }
 
-.UserButton.out {
+#UserButton.out {
  left: 2.2em;
  top: 10.3em;
 }
 
-.HomeButton img {
+#HomeButton img {
  padding: 0.4em 0.2em;
  width: 5em;
  height: 5em;
 }
 
-.HomeButton.out {
+#HomeButton.out {
  left: -6.4em;
  top: 1.2em;
 }
 
-.EventButton.out {
+#EventButton.out {
  left: -4em;
  top: 7.7em;
 }
 
-.UserButton.out {
+#UserButton.out {
  left: 2.2em;
  top: 10.3em;
 }
 
-.EventButton img {
+#EventButton img {
  padding-left: 0.7em;
  padding-top: 0.8em;
  width: 4.2em;
  height: 4.2em;
 }
 
-.UserButton img {
+#UserButton img {
  padding-left: 1em;
  padding-top: 0.8em;
  width: 4em;
  height: 3.8em;
 }
 
-.HomeButton:hover {
+#HomeButton:hover {
  background-color: #e38003;
  border-color: #b26403;
 }
-.EventButton:hover {
+#EventButton:hover {
  background-color: #e38003;
  border-color: #b26403;
 }
 
-.UserButton:hover {
+#UserButton:hover {
  background-color: #e38003;
  border-color: #b26403;
 }
+
+/* list styling */
+
+.component-lists {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.component-lists ul li{
+  color: #557037;
+  list-style-type: circle;
+}
+
 
 /* CODE SNIPPETS */
 
@@ -520,6 +599,18 @@ footer ul li {
  font-size: 0.8em;
 }
 
+.cs-component-container {
+  background-color: #bed09f;
+  border: 3px solid #789e4f;
+  border-radius: 1em;
+  font-family: Courier, monospace;
+  width: 90%;
+  padding: 1em;
+  margin-bottom: 1em;
+  text-align: left;
+  display: block;
+}
+
 /* FONTS */
 
 .Lobster {
@@ -551,7 +642,6 @@ footer ul li {
  font-size: 1.4em;
 }
 .R4 {
- font-family: 'Roboto Slab Light';
  font-size: 1em;
 }
 .R5 {
