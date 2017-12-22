@@ -154,19 +154,17 @@ h4 {
 
 /* REST */
 
-.menubutton {
+/* menubuttons styling */
+
+.component-button {
  display: flex;
  align-items: center;
- flex-direction: row;
- justify-content: center;
+ flex-direction: column;
 }
-.menubutton button {
- margin:0.2em;
+.menubutton button{
  font-family: 'Lobster', bold;
  color: #fdfdfd;
  font-size: 2em;
- background-color: #789e4f;
- border-color: #557037;
  border-width: 3px;
  width: 5em;
  height: 5em;
@@ -174,19 +172,14 @@ h4 {
  border-radius: 50%;
  margin-bottom: 1em;
 }
-.menubutton button:hover {
- border-width: 0px;
-}
-.menubutton .b2 {
+.button1{
  background-color: #e38003;
  border-color: #b26403;
 }
-.menubutton img {
- height: 13em;
- width: auto;
+.button2{
+ background-color: #789e4f;
+ border-color: #557037;
 }
-
-/* Methodology */
 
 /* Code-Style */
 
@@ -315,11 +308,10 @@ input[type="radio"]:hover + label:before {
 }
 
 .component-drop .selectstyle {
- border: 1px solid #ccc;
+ border-style: solid;
  width: 120px;
- border-radius: 3px;
  overflow: hidden;
- background: #fafafa url("droparrow.png") no-repeat 90% 50%;
+ background: url("droparrow.png") no-repeat 90% 50%;
  background-color: #bed09f;
  border-color: #557037;
  border-width: 2px;
@@ -329,10 +321,9 @@ input[type="radio"]:hover + label:before {
 .component-drop select {
  color: #557037;
  display: flex;
- align-items: center;
  padding: 1em;
- padding-top: 0.3em;
- padding-bottom: 0.3em;
+ padding-top: 0.4em;
+ padding-bottom: 0.4em;
  width: 130%;
  border: none;
  box-shadow: none;
@@ -392,7 +383,6 @@ input[type="radio"]:hover + label:before {
  display: flex;
  flex-direction: column;
  align-items: center;
- margin-bottom: 8em;
 }
 
 .MainButton {
@@ -401,6 +391,7 @@ input[type="radio"]:hover + label:before {
  z-index: 100;
  height: 10em;
  cursor: pointer;
+ margin-bottom: 8em;
 }
 
 #Logo {

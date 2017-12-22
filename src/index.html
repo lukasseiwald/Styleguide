@@ -91,8 +91,8 @@
         </div>
         <h2>Colors – example</h2>
         <section class="menubutton">
-            <button class="b1">Inventory</button>
-            <button class="b2">Guestlist</button>
+            <button class="button1">Inventory</button>
+            <button class="button2">Guestlist</button>
         </section>
       </div>
     </section>
@@ -461,9 +461,30 @@
                           <span class="cs-classname">input[type=radio]</span> { <br/>
                           <span class="cs-spaces">ss</span> <span class="cs-cssproperty">display:</span> none; <br />
                           }<br/>
-                          <span class="cs-classname">input[type=radio]</span> { <br/>
-                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">display:</span> none; <br />
-                          }
+                          <span class="cs-classname">input[type=radio] + label:before</span> { <br/>
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">background-color:</span> #bed09f; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">border-width:</span> 2px; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">border-style:</span> solid; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">birder-color:</span> #557037; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">height:</span> 1em; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">width:</span> 1em; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">border-radius:</span> 50%; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">content:</span> ""; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">margin-top:</span> -0.2em; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">margin-right:</span> 0.4em; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">display:</span> inline-block; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">vertical-align:</span> middle; <br />
+                          }<br/>
+                          <span class="cs-classname">input[type=radio]:checked:hover + label:before</span> { <br/>
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">background-color:</span> #d9b01d; <br />
+                          }<br/>
+                          <span class="cs-classname">input[type=radio]:checked + label:before</span> { <br/>
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">background-color:</span> #789e4f; <br />
+                          }<br/>
+                          <span class="cs-classname">input[type=radio]:hover + label:before</span> { <br/>
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">background-color:</span> #fee332; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">border-color:</span> #c17a05; <br />
+                          }<br/>
                       </code>
                   </section>
               </section>
@@ -471,7 +492,29 @@
                   <h3>Textfields</h3>
                   <input type="text">
                   <h4>HTML</h4>
+                  <section class="cs-component-container">
+                      <code>
+                          &lt;<span class="cs-htmltag">input</span><span class="cs-class"> type</span>=<span class="cs-classname">"text"</span>> <br />
+                      </code>
+                  </section>
                   <h4>CSS</h4>
+                  <section class="cs-component-container">
+                      <code>
+                          <span class="cs-classname">input</span> { <br/>
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">color:</span> #557037; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">background-color:</span> #bed09f; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">border-width:</span> 2px; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">border-color:</span> #557037; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">border-style:</span> solid; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">border-radius:</span> 2em; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">padding:</span> 1em; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">padding-top:</span> 0.4em; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">padding-bottom:</span> 0.4em; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">-webkit-appearance:</span> none; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">-moz-appearance:</span> none; <br />
+                          }<br/>
+                      </code>
+                  </section>
               </section>
               <section class="component-drop">
                   <h3>Dropdown</h3>
@@ -483,20 +526,80 @@
                       </select>
                   </div>
                   <h4>HTML</h4>
+                  <section class="cs-component-container">
+                      <code>
+                          &lt;<span class="cs-htmltag">div</span><span class="cs-class"> class</span>=<span class="cs-classname">"selectstyle"</span>> <br />
+                          <span class="cs-spaces">ss</span>&lt;<span class="cs-htmltag">select</span>> <br />
+                          <span class="cs-spaces">ssss</span>&lt;<span class="cs-htmltag">option</span>>Option1&lt;/<span class="cs-htmltag">option</span>> <br />
+                          <span class="cs-spaces">ssss</span>&lt;<span class="cs-htmltag">option</span>>Option2&lt;/<span class="cs-htmltag">option</span>> <br />
+                          <span class="cs-spaces">ssss</span>&lt;<span class="cs-htmltag">option</span>>Option3&lt;/<span class="cs-htmltag">option</span>> <br />
+                          <span class="cs-spaces">ss</span>&lt;/<span class="cs-htmltag">select</span>> <br />
+                          &lt;/<span class="cs-htmltag">div</span>> <br />
+                      </code>
+                  </section>
                   <h4>CSS</h4>
+                  <section class="cs-component-container">
+                      <code>
+                          <span class="cs-classname">.selectstyle</span> { <br/>
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">border-style:</span> solid; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">width:</span> 120px; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">overflow:</span> hidden; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">background:</span> url("droparrow.png") no-repeat 90% 50%; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">background-color:</span> #bed09f; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">border-color:</span> #557037; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">border-width:</span> 2px; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">border-radius:</span> 2em; <br />
+                          }<br/>
+                          <span class="cs-classname">select</span> { <br/>
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">color:</span> #557037; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">display:</span> flex; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">padding:</span> 1em; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">padding-top:</span> 0.4em; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">padding-bottom:</span> 0.4em; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">width:</span> 130%; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">border:</span> none; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">box-shadow:</span> none; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">background:</span> transparent; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">background-image:</span> none; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">-webkit-appearance:</span> none; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">-moz-appearance:</span> none; <br />
+                          }<br/>
+                      </code>
+                  </section>
               </section>
           </section>
           <section class="component-wrapper">
               <div class="component-title">
                   <h2>Buttons</h2>
               </div>
-              <section class="copmonent-button">
+              <section class="component-button">
                   <section class="menubutton">
-                      <button class="b1">Inventory</button>
-                      <button class="b2">Guestlist</button>
+                      <button class="button1">Inventory</button>
+                      <button class="button2">Guestlist</button>
                   </section>
                   <h4>HTML</h4>
+                  <section class="cs-component-container">
+                      <code>
+                          &lt;<span class="cs-htmltag">div</span><span class="cs-class"> class</span>=<span class="cs-classname">"menubutton"</span>> <br />
+                          <span class="cs-spaces">ss</span>&lt;<span class="cs-htmltag">button</span><span class="cs-class"> class</span>=<span class="cs-classname">"button1"</span>>Button&lt;/<span class="cs-htmltag">button</span>> <br />
+                          &lt;/<span class="cs-htmltag">div</span>> <br />
+                      </code>
+                  </section>
                   <h4>CSS</h4>
+                  <section class="cs-component-container">
+                      <code>
+                          <span class="cs-classname">.menubutton</span> { <br/>
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">font-family:</span> 'Lobster', bold; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">color:</span> #fdfdfd; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">font-size:</span> 2em; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">border-width:</span> 3px; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">width:</span> 5em; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">height:</span> 5em; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">text-align:</span> center; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">border-radius:</span> 50%; <br />
+                          }<br/>
+                      </code>
+                  </section>
               </section>
           </section>
       </section>
@@ -518,6 +621,28 @@
                     <img src="img/profile.png"/>
                   </div>
                 </div>
+                  <h4>HTML</h4>
+                  <section class="cs-component-container">
+                      <code>
+                          &lt;<span class="cs-htmltag">div</span><span class="cs-class"> class</span>=<span class="cs-classname">"main-button"</span>> <br />
+                          <span class="cs-spaces">ss</span>&lt;<span class="cs-htmltag">img</span><span class="cs-class"> id</span>=<span class="cs-classname">"Logo"</span><span class="cs-class"> src</span>=<span class="cs-classname">"img/LogoKonoRand.png"</span><span class="cs-class"> onmouseover</span>=<span class="cs-classname">"hover(this);"</span><span class="cs-class"> onmouseout</span>=<span class="cs-classname">"unhover(this);"</span>/> <br />
+                          <span class="cs-spaces">ss</span>&lt<span class="cs-htmltag">div</span><span class="cs-class"> class</span>=<span class="cs-classname">"SubButton"</span><span class="cs-class"> id</span>=<span class="cs-classname">"HomeButton"</span>></br>
+                          <span class="cs-spaces">ssss</span>&lt;<span class="cs-htmltag">img</span><span class="cs-class"> src</span>=<span class="cs-classname">"img/home.png"</span>></br>
+                          <span class="cs-spaces">ss</span>&lt/<span class="cs-htmltag">div</span>></br>
+                          <span class="cs-spaces">ss</span>&lt<span class="cs-htmltag">div</span><span class="cs-class"> class</span>=<span class="cs-classname">"SubButton"</span><span class="cs-class"> id</span>=<span class="cs-classname">"EventButton"</span>></br>
+                          <span class="cs-spaces">ssss</span>&lt;<span class="cs-htmltag">img</span><span class="cs-class"> src</span>=<span class="cs-classname">"img/event.png"</span>></br>
+                          <span class="cs-spaces">ss</span>&lt/<span class="cs-htmltag">div</span>></br>
+                          <span class="cs-spaces">ss</span>&lt<span class="cs-htmltag">div</span><span class="cs-class"> class</span>=<span class="cs-classname">"SubButton"</span><span class="cs-class"> id</span>=<span class="cs-classname">"UserButton"</span>></br>
+                          <span class="cs-spaces">ssss</span>&lt;<span class="cs-htmltag">img</span><span class="cs-class"> src</span>=<span class="cs-classname">"img/profile.png"</span>></br>
+                          <span class="cs-spaces">ss</span>&lt/<span class="cs-htmltag">div</span>></br>
+                          &lt;/<span class="cs-htmltag">div</span>> <br />
+                      </code>
+                  </section>
+                  <h4>CSS</h4>
+                  <section class="cs-component-container">
+                      <code>
+                      </code>
+                  </section>
               </div>
           </section>
       </section>
