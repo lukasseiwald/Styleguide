@@ -414,7 +414,6 @@ input[type="radio"]:hover + label:before {
  display: flex;
  flex-direction: column;
  align-items: center;
- margin-bottom: 8em;
 }
 
 .MainButton {
@@ -423,6 +422,7 @@ input[type="radio"]:hover + label:before {
  z-index: 100;
  height: 10em;
  cursor: pointer;
+ margin-bottom: 8em;
 }
 
 #Logo {
