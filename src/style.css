@@ -36,7 +36,7 @@
 .introduction {
  margin-top: 2em;
 }
-.colors-header, .introduction-header, .typography-header, .logo-header {
+.colors__header, .introduction-header, .typography-header, .logo-header {
  width: 100%;
  padding-top: 1.2em;
  margin-bottom: 1em;
@@ -45,7 +45,7 @@
  border-top-right-radius: 9px;
  border-top-left-radius: 9px;
 }
-.introduction-wrapper, .colors-wrapper {
+.introduction-wrapper, .colors_wrapper {
  padding: 0 1em;
  margin-bottom: 1em;
 }
@@ -136,7 +136,7 @@ h4 {
  flex-direction: column;
  align-items: center;
 }
-.color-wrapper {
+.color_wrapper {
  margin-top: 1em;
  width: 100%;
  display: flex;
@@ -144,7 +144,7 @@ h4 {
  margin-bottom: 1em;
 }
 @media screen and (max-width: 500px) {
- .color-wrapper {
+ .color_wrapper {
  flex-direction: column;
  align-items: center;
  }
