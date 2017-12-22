@@ -151,38 +151,8 @@ h4 {
  margin: 0.2em;
  }
 }
-footer {
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
- background-color: #bed09f;
- bottom: 0;
- color: #789e4f;
- height: 5em;
-}
 
-footer h1 {
- font-size: 1.2em;
-}
-.footerwrapper {
- width: 90vw;
- display: flex;
- justify-content: center;
-}
-footer h1 {
- margin: 0;
- color: #789e4f;
-}
-footer ul {
- list-style-type: none;
- margin-top: 0.5em;
-}
-
-footer ul li {
- display: inline;
- margin: 0 1em;
-}
+/* REST */
 
 .menubutton {
  display: flex;
@@ -682,4 +652,38 @@ input[type="radio"]:hover + label:before {
 }
 .c10 {
  background-color: #789e4f;
+}
+
+/* FOOTER */
+
+footer {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ background-color: #bed09f;
+ bottom: 0;
+ color: #789e4f;
+ height: 5em;
+}
+
+footer h1 {
+ font-size: 1.2em;
+}
+.footer__wrapper {
+ width: 90vw;
+ display: flex;
+ justify-content: center;
+}
+footer h1 {
+ margin: 0;
+ color: #789e4f;
+}
+footer ul {
+ list-style-type: none;
+ margin-top: 0.5em;
+}
+footer ul li {
+ display: inline;
+ margin: 0 1em;
 }
