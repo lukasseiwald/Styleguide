@@ -1,3 +1,5 @@
+/* GENERAL */
+
 * {
  margin: 0;
  padding: 0;
@@ -8,7 +10,6 @@
  width: 60vw;
  margin: 5em auto;
 }
-
 @media screen and (max-width: 1200px) {
  .wrapper {
  width: 80vw;
@@ -32,7 +33,6 @@
  border-radius: 10px;
  margin-bottom: 2em;
 }
-
 .introduction {
  margin-top: 2em;
 }
@@ -49,11 +49,10 @@
  padding: 0 1em;
  margin-bottom: 1em;
 }
-#typoDescription {
+.typography-description {
  margin-top: 1em;
  margin-bottom: 2em;
 }
-
 .logo-section {
  display: flex;
  justify-content: center;
@@ -92,7 +91,6 @@
  text-transform: uppercase;
  transition: all 0.5s ease;
 }
-
 .button:hover {
  border: 0.2em solid #bed09f;
  transition: all 0.5s ease;
