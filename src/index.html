@@ -152,9 +152,8 @@
   <section class="methodology" id="link-methodology">
       <h1>CSS Methodology</h1>
       <section class="code-style-rules">
-          <div class="methodology-header">
+          <div class="methodology__header">
             <h2>Code Style Rules</h2>
-
             <h5>Kono uses <a href="http://codeguide.co/#css">Codeguide.co</a> as a base for Style Rules</h5>
           </div>
           <h3>Line Length</h3>
@@ -204,14 +203,14 @@
           </p>
       </section>
       <section class="naming-conventions">
-        <div class="methodology-header">
+        <div class="methodology__header">
           <h2>Naming Conventions</h2>
           <h5>
             Kono uses the <a href="http://getbem.com/naming/">BEM</a> naming conventions <br/>
-            This following section is a direct citation from the link above.
+            This following section is a direct citation from the link above, with some minor exceptions.
           </h5>
         </div>
-          <div class="naming-conventions-div">
+          <div class="naming-conventions__elem">
             <h3>Block</h3>
             <p>
               Encapsulates a standalone entity that is meaningful on its own.
@@ -220,15 +219,15 @@
                Holistic entities without DOM representation (such as controllers or models)
                can be blocks as well.
             </p>
-            <div class="naming-conventions-div-container">
-              <div>
+            <div class="naming-conventions__elem__container">
+              <div class="naming-conventions__elem__container__sub-elem">
                 <h4>Naming</h4>
                 <p>
                   Block names may consist of Latin letters, digits, and dashes.
                   To form a CSS class, add a short prefix for namespacing: .block
                 </p>
               </div>
-              <div>
+              <div class="naming-conventions__elem__container__sub-elem">
                 <h4>HTML</h4>
                 <p>
                   Any DOM node can be a block if it accepts a class name.
@@ -241,14 +240,14 @@
                   </code>
                 </section>
               </div>
-              <div>
+              <div class="naming-conventions__elem__container__sub-elem">
                 <h4>CSS</h4>
-                <ul>
+                <ul class="naming-conventions__elem__container__sub-elem__list">
                   <li>
                     Use class name selector only
                   </li>
                   <li>
-                    No tag name or ids
+                    No tag name or ids, except the tag has a consistent style (h1, h2, footer, header)
                   </li>
                   <li>
                     No dependency on other blocks/elements on a page
@@ -264,13 +263,13 @@
               </div>
             </div>
           </div>
-          <div class="naming-conventions-div">
+          <div class="naming-conventions__elem">
             <h3>Element</h3>
             <p>
               Parts of a block and have no standalone meaning. Any element is semantically tied to its block.
             </p>
-            <div class="naming-conventions-div-container">
-              <div>
+            <div class="naming-conventions__elem__container">
+              <div class="naming-conventions__elem__container__sub-elem">
                 <h4>Naming</h4>
                 <p>
                   Element names may consist of Latin letters, digits, dashes and underscores.
@@ -278,7 +277,7 @@
                   <span class="cs-container-inline">.block__elem</span>
                 </p>
               </div>
-              <div>
+              <div class="naming-conventions__elem__container__sub-elem">
                 <h4>HTML</h4>
                 <p>
                   Any DOM node within a block can be an element. Within a given block, all elements are semantically equal.
@@ -287,25 +286,24 @@
                   <code>
                     &lt;<span class="cs-htmltag">div</span> <span class="cs-class">class</span>=<span class="cs-classname">"block"</span>&gt; <br>
                       <span class="cs-spaces">ss</span>... <br />
+                    <span class="cs-spaces">ss</span>
                     &lt;<span class="cs-htmltag">span</span> <span class="cs-class">class</span>=<span class="cs-classname">"block__elem"</span>&gt;
                     &lt;/<span class="cs-htmltag">span</span>> <br />
                     &lt;/<span class="cs-htmltag">div</span>> <br />
                   </code>
                 </section>
               </div>
-              <div>
+              <div class="naming-conventions__elem__container__sub-elem">
                 <h4>CSS</h4>
-                <ul>
+                <ul class="naming-conventions__elem__container__sub-elem__list">
                   <li>
                     Use class name selector only
-
                   </li>
                   <li>
-                    No tag name or ids
-
+                    No tag name or ids, except the tag has a consistent style (h1, h2, footer, header)
                   </li>
                   <li>
-                    No dependency on other blocks/elements on a page
+                    No dependency on other blocks/ elements on a page
                   </li>
                 </ul>
                 <section class="cs-container">
@@ -319,13 +317,13 @@
             </div>
           </div>
 
-          <div class="naming-conventions-div">
+          <div class="naming-conventions__elem">
             <h3>Modifier</h3>
             <p>
               Flags on blocks or elements. Use them to change appearance, behavior or state.
             </p>
-            <div class="naming-conventions-div-container">
-              <div>
+            <div class="naming-conventions__elem__container">
+              <div class="naming-conventions__elem__container__sub-elem">
                 <h4>Naming</h4>
                 <p>
                   Modifier names may consist of Latin letters,
@@ -336,7 +334,7 @@
                     Spaces in complicated modifiers are replaced by dash.
                 </p>
               </div>
-              <div>
+              <div class="naming-conventions__elem__container__sub-elem">
                 <h4>HTML</h4>
                 <p>
                   Modifier is an extra class name which you add to a block/element DOM node. <br />Add modifier classes only to blocks/elements they modify, and keep the original class:
@@ -353,9 +351,9 @@
                   </code>
                 </section>
               </div>
-              <div>
+              <div class="naming-conventions__elem__container__sub-elem">
                 <h4>CSS</h4>
-                <ul>
+                <ul class="naming-conventions__elem__container__sub-elem__list">
                   <li>
                     Use modifier class name as selector:
                     <section class="cs-container">
