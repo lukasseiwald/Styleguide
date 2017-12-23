@@ -161,7 +161,7 @@ h4 {
  align-items: center;
  flex-direction: column;
 }
-.menubutton button{
+.menubutton button {
  font-family: 'Lobster', bold;
  color: #fdfdfd;
  font-size: 2em;
@@ -172,11 +172,11 @@ h4 {
  border-radius: 50%;
  margin-bottom: 1em;
 }
-.button1{
+.button1 {
  background-color: #e38003;
  border-color: #b26403;
 }
-.button2{
+.button2 {
  background-color: #789e4f;
  border-color: #557037;
 }
@@ -219,35 +219,35 @@ h4 {
  margin-top: 2em;
 }
 
-.naming-conventions ul li {
- list-style: none;
-}
-
 .naming-conventions h2 {
- margin-top: 0;
  padding-top: 1em;
 }
 
-.naming-conventions-div:nth-child(2), .naming-conventions-div:nth-child(3) {
+.naming-conventions__elem:nth-child(2), .naming-conventions__elem:nth-child(3) {
  margin-top: 2em;
  line-height: 1.6em;
  border-bottom: 1px solid #789e4f;
 }
 
-.naming-conventions-div-container {
+.naming-conventions__elem__container {
  display: flex;
  flex-flow: column;
  margin-top: 1.5em;
  margin-bottom: 1em;
 }
 
-.naming-conventions-div-container div {
+.naming-conventions__elem__container__sub-elem {
  margin-left: 2em;
  margin-right: 2em;
 }
 
-.naming-conventions-div-container div p, .naming-conventions-div-container ul, .naming-conventions-div-container section {
- margin-top: 1em;
+.naming-conventions__elem__container__sub-elem p{
+  margin-top: 1em;
+}
+
+.naming-conventions__elem__container__sub-elem__list{
+  list-style: none;
+  margin-top: 1em;
 }
 
 /* radio button styling */
@@ -519,6 +519,7 @@ input[type="radio"]:hover + label:before {
  width: 100%;
  padding: 1em;
  margin-bottom: 1em;
+ margin-top: 1em;
  text-align: left;
  display: block;
 }
