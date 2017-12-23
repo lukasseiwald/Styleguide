@@ -437,7 +437,7 @@ input[type="radio"]:hover + label:before {
  top: 1.2em;
 }
 
-#äEventButton.out {
+#EventButton.out {
  left: -4em;
  top: 7.7em;
 }
@@ -451,21 +451,6 @@ input[type="radio"]:hover + label:before {
  padding: 0.4em 0.2em;
  width: 5em;
  height: 5em;
-}
-
-#HomeButton.out {
- left: -6.4em;
- top: 1.2em;
-}
-
-#EventButton.out {
- left: -4em;
- top: 7.7em;
-}
-
-#UserButton.out {
- left: 2.2em;
- top: 10.3em;
 }
 
 #EventButton img {

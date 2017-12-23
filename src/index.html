@@ -642,6 +642,89 @@
                   <h4>CSS</h4>
                   <section class="cs-component-container">
                       <code>
+                          <span class="cs-classname">.MainButton</span> { <br/>
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">position:</span> relative; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">width:</span> 10em; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">z-index:</span> 100; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">height:</span> 10em; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">cursor:</span> pointer; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">margin-bottom:</span> 8em; <br />
+                          }<br/>
+                          <span class="cs-classname">#Logo</span> { <br/>
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">width:</span> 10em; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">height:</span> 10em; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">transition:</span> 0.2s all ease-in; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">animation-duration:</span> 1s; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">animation-fill-mode:</span> both; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">animation-timing-function:</span> ease-in-out; <br />
+                          }<br/>
+                          <span class="cs-classname">@keyframes tilting</span> { <br/>
+                          <span class="cs-spaces">ss</span> <span class="cs-classname">0%, 100%, 20%, 50%, 80%</span> { <br/>
+                          <span class="cs-spaces">ssss</span> <span class="cs-cssproperty">transform:</span> rotate(0deg); <br />
+                          <span class="cs-spaces">ss</span> }<br/>
+                          <span class="cs-spaces">ss</span> <span class="cs-classname">40%</span> { <br/>
+                          <span class="cs-spaces">ssss</span> <span class="cs-cssproperty">transform:</span> rotate(10deg); <br />
+                          <span class="cs-spaces">ss</span> }<br/>
+                          <span class="cs-spaces">ss</span> <span class="cs-classname">60%</span> { <br/>
+                          <span class="cs-spaces">ssss</span> <span class="cs-cssproperty">transform:</span> rotate(-10deg); <br />
+                          <span class="cs-spaces">ss</span> }<br/>
+                          }<br/>
+                          <span class="cs-classname">.SubButton</span> { <br/>
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">position:</span> absolute; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">width:</span> 5.5em; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">height:</span> 5.5em; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">z-index:</span> -1; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">left:</span> 2.3em; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">top:</span> 2.4em; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">background-color:</span> #789e4f; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">border-radius:</span> 5em; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">border:</span> 0.3em #557037 solid; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">transition:</span> 0.2s all ease-in; <br />
+                          }<br/>
+                          <span class="cs-classname">#Logo.out</span> { <br/>
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">transform:</span> rotate(45deg); <br />
+                          }<br/>
+                          <span class="cs-classname">#HomeButton.out</span> { <br/>
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">left:</span> -6.4em; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">top:</span> 1.2em; <br />
+                          }<br/>
+                          <span class="cs-classname">#EventButton.out</span> { <br/>
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">left:</span> -4em; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">top:</span> 7.7em; <br />
+                          }<br/>
+                          <span class="cs-classname">#UserButton.out</span> { <br/>
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">left:</span> 2.2em; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">top:</span> 10.3em; <br />
+                          }<br/>
+                          <span class="cs-classname">#HomeButton img</span> { <br/>
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">padding:</span> 0.4em 0.2em; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">width:</span> 5em; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">height:</span> 5em; <br />
+                          }<br/>
+                          <span class="cs-classname">#EventButton img</span> { <br/>
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">padding-left:</span> 0.7em; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">padding-top:</span> 0.8em; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">width:</span> 4.2em; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">height:</span> 4.2em; <br />
+                          }<br/>
+                          <span class="cs-classname">#UserButton img</span> { <br/>
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">padding-left:</span> 1em; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">padding-top:</span> 0.8em; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">width:</span> 4em; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">height:</span> 3.8em; <br />
+                          }<br/>
+                          <span class="cs-classname">#homeButton:hover</span> { <br/>
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">background-color:</span> #e38003; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">border-color:</span> #b26403; <br />
+                          }<br/>
+                          <span class="cs-classname">#EventButton:hover</span> { <br/>
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">background-color:</span> #e38003; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">border-color:</span> #b26403; <br />
+                          }<br/>
+                          <span class="cs-classname">#UserButton:hover</span> { <br/>
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">background-color:</span> #e38003; <br />
+                          <span class="cs-spaces">ss</span> <span class="cs-cssproperty">border-color:</span> #b26403; <br />
+                          }<br/>
                       </code>
                   </section>
               </div>
