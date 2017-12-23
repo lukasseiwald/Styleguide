@@ -546,6 +546,7 @@ input[type="radio"]:hover + label:before {
 }
 
 .cs-component-container {
+ margin-top: 2em;
   background-color: #bed09f;
   border: 3px solid #789e4f;
   border-radius: 1em;
